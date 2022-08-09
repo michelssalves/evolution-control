@@ -22,13 +22,13 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
+                        <tr>
                             <th rowspan="2"><center><img style="width:150px; height:150px" src="assets/img/4.jpg" alt=""></th>
-                            <tr>
                             <th><center>Paciente</th>
-                            </tr>
-                            <tr>
+                        </tr>
+                         
                             <th><center>REFAELE YAEDA SCABIA ALVES</th>
-                            </tr>
+                          
                         </thead>
                     </table>
                     <form action="" method="POST">
