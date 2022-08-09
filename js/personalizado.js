@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
             info.jsEvent.preventDefault(); // don't let the browser navigate
             console.log(info.event);
             $('#visualizar #id').text(info.event.id);
+            $('#visualizar #id').val(info.event.id);
             $('#visualizar #id_paciente').text(info.event.extendedProps.id_paciente);
             $('#visualizar #id_profissional').text(info.event.extendedProps.id_profissional);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
-
             $('#visualizar #start').text(info.event.start.toLocaleString());
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
