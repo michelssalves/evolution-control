@@ -9,9 +9,10 @@ if($acao =='evoluir'){
     $comentario = $_REQUEST['comentario'];
 
 
-        $sql = $pdo->prepare("INSERT INTO comentarios (id_funcionario, comentario) VALUES (:id_funcionario, :comentario)");
+        $sql = $pdo->prepare("INSERT INTO comentarios (id_funcionario, comentario, data_hora) VALUES (:id_funcionario, :comentario, NOW()");
         $sql->bindValue(':id_funcionario', $id_funcionario);
         $sql->bindValue(':comentario', $comentario);
+
         $sql->execute();
 
 }
@@ -24,6 +25,7 @@ function listar(){
     $sql = $pdo->prepare("SELECT * FROM comentarios AS c
     JOIN profissionais AS p
     ON p.id_profissional = c.id_profissional
+    ORDER BY c.data_hora DESC
     ");
     $sql->execute();
     
