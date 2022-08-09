@@ -34,7 +34,7 @@ include 'assets/controllers/cadastrarComentario.php';
                     <form action="" method="POST">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
-                            <textarea name="comentario" id="" cols="40" rows="4"></textarea>
+                            <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
                         </div>
                         <button name="acao" value="evoluir">Enviar</button>
                     </form>
