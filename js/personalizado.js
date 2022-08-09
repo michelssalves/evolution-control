@@ -1,3 +1,6 @@
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+}
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
@@ -71,7 +74,7 @@ $(document).ready(function () {
         $('.formedit').slideToggle();
         $('.visevent').slideToggle();
     });
-    
+
     
     $("#editevent").on("submit", function (event) {
         event.preventDefault();

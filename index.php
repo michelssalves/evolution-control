@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-    <script src='assets/js/block.js'></script>
+        <script src='assets/js/block.js'></script>
         <meta charset='utf-8' />
         <link href='css/core/main.min.css' rel='stylesheet' />
         <link href='css/daygrid/main.min.css' rel='stylesheet' />
