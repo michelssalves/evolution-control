@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //$('#visualizar #id').val(info.event.id);
             $('#visualizar #title').text(info.event.title);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
-            $('#visualizar #nome_paciente').val(info.event.extendedProps.nome_paciente);
+            $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
 
             $('#visualizar #start').text(info.event.start.toLocaleString());
             $('#visualizar #start').val(info.event.start.toLocaleString());
