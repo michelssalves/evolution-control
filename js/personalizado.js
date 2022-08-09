@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(info.event);
             $('#visualizar #id').text(info.event.id);
             $('#visualizar #id_paciente').text(info.event.extendedProps.id_paciente);
-            $('#visualizar #id_profisional').text(info.event.extendedProps.id_profisional);
+            $('#visualizar #id_profissional').text(info.event.extendedProps.id_profissional);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
 
