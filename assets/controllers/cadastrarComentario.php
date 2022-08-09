@@ -56,7 +56,7 @@ if ($sql->rowCount() > 0) {
    
      foreach($lista as $row){
         $txtTable = $txtTable.'<tr>
-        <td>'.$row['horarios'].'</td>
+        <td><center>'.$row['horarios'].'</td>
         <tr>';
         
     }
