@@ -142,7 +142,7 @@ include 'assets/controllers/config.php';
                                             $sql->execute();
                                             $fetchAll = $sql->fetchAll();
                                             foreach ($fetchAll as $row) {
-                                                echo '<option value="'.$row['id_profissional'].'">'.$row['nome'].'</option>';
+                                                echo '<option value="'.$row['id_profissional'].'">'.$row['nome_profissional'].'</option>';
                                             }
                                         ?>
                                     </select>
@@ -158,7 +158,7 @@ include 'assets/controllers/config.php';
                                             $sql->execute();
                                             $fetchAll = $sql->fetchAll();
                                             foreach ($fetchAll as $row) {
-                                                echo '<option value="'.$row['id_paciente'].'">'.$row['nome'].'</option>';
+                                                echo '<option value="'.$row['id_paciente'].'">'.$row['nome_paciente'].'</option>';
                                             }
                                         ?>
                                     </select>
