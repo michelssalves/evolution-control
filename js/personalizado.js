@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #end').text(info.event.end.toLocaleString());
             $('#visualizar #end').val(info.event.end.toLocaleString());
     
-            $('#visualizar #nome_paciente').val(info.event.nome_paciente.toLocaleString());
-            $('#visualizar #nome_profissional').val(info.event.nome_profissional.toLocaleString());
+            $('#visualizar #nome_paciente').val(info.event.nome_paciente);
+            $('#visualizar #nome_profissional').val(info.event.nome_profissional);
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
