@@ -22,7 +22,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
-                            <th><img src="assets/img/4.jpg" alt=""></th>
+                            <th><center><img style="width:50px; height:50px" src="assets/img/4.jpg" alt=""></th>
                             <th><center>Paciente</th>
                             <th><center>REFAELE YAEDA SCABIA ALVES</th>
                         </thead>
