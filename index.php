@@ -139,7 +139,7 @@ include 'assets/controllers/config.php';
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Paciente</label>
+                                <label class="col-sm-2 col-form-label">Profissional</label>
                                 <div class="col-sm-10">
                                     <select name="id_profissional" class="form-control" id="color">
                                         <option value="">Selecione</option>			
