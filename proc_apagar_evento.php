@@ -12,7 +12,7 @@ if (!empty($id)) {
     $sql->execute();
 
     
-    if($sql->execute()){
+    if($sql){
         $_SESSION['msg'] = '<div class="alert alert-success" role="alert">O evento foi apagado com sucesso!</div>';
         header("Location: index.php");
     }else{
