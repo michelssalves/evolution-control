@@ -40,9 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
     calendar.render();
 });
 
+
 $(document).ready(function () {
     $("#addevent").on("submit", function (event) {
         event.preventDefault();
+        event.stopPropagation();
        $.ajax({
             method: "POST",
             url: "cad_event.php",
@@ -51,7 +53,8 @@ $(document).ready(function () {
             processData: false,
             success: function (retorna) {
                 if (retorna['sit']) {
-                    $("#msg-cad").html(retorna['msg']);
+                    //$("#msg-cad").html(retorna['msg']);
+                    location.reload();
                 } else {
                     $("#msg-cad").html(retorna['msg']);
                 }
