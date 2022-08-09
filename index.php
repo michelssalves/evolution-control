@@ -1,12 +1,6 @@
 <?php
 session_start();
 ?>
-<!--**
- * @author Cesar Szpak - Celke - cesar@celke.com.br
- * @pagina desenvolvida usando FullCalendar e Bootstrap 4,
- * o código é aberto e o uso é free, 
- * porém lembre-se de conceder os créditos ao desenvolvedor.
- *-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,7 +26,9 @@ session_start();
             unset($_SESSION['msg']);
         }
         ?>
-        <div id='calendar'></div>
+        <div id='calendar'>
+            
+        </div>
 
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
