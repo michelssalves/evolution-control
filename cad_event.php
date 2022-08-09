@@ -18,7 +18,7 @@ $sql->bindParam(':start', $data_start_conv);
 $sql->bindParam(':end', $data_end_conv);
 $sql->execute();
 
-if ($sql->execute()) {
+if ($sql) {
     $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">Evento cadastrado com sucesso!</div>'];
     $_SESSION['msg'] = '<div class="alert alert-success" role="alert">Evento cadastrado com sucesso!</div>';
 } else {
