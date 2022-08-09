@@ -23,6 +23,7 @@ include 'assets/controllers/cadastrarComentario.php';
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
                             <th rowspan="2"><center><img style="width:150px; height:150px" src="assets/img/4.jpg" alt=""></th>
+                            <th><center>Paciente</th>
                             <th><center>REFAELE YAEDA SCABIA ALVES</th>
                         </thead>
                     </table>
