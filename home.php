@@ -26,6 +26,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <tr>
                             <th><center>Paciente</th>
                             </tr>
+                            <tr>
                             <th><center>REFAELE YAEDA SCABIA ALVES</th>
                             </tr>
                         </thead>
