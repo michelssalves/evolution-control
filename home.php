@@ -20,6 +20,13 @@ include 'assets/controllers/cadastrarComentario.php';
         <div class="container-lg">
             <div class="container-xl">
                 <div class="container-xxl">
+                    <table class="table table-striped table-bordered table-hoverable">
+                        <thead class="thead-dark">
+                            <th>-</th>
+                            <th><center>Paciente</th>
+                            <th><center>Evolução</th>
+                        </thead>
+                    </table>
                     <form action="" method="POST">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
