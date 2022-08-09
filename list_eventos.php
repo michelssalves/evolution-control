@@ -7,18 +7,18 @@ $sql->execute();
 $eventos = [];
 
 while($row = $sql->fetch(PDO::FETCH_ASSOC)){
-    $id_agenda = $row['id'];
-    $titulo = $row['title'];
-    $cor = $row['color'];
-    $inicio = $row['start'];
-    $fim = $row['end'];
+    $id = $row['id'];
+    $title = $row['title'];
+    $color = $row['color'];
+    $start = $row['start'];
+    $end = $row['end'];
     
     $eventos[] = [
-        'id_agenda' => $id_agenda, 
-        'titulo' => $titulo, 
-        'cor' => $cor, 
-        'inicio' => $inicio, 
-        'fim' => $fim, 
+        'id' => $id, 
+        'title' => $title, 
+        'color' => $color, 
+        'start' => $start, 
+        'end' => $end, 
         ];
 }
 
