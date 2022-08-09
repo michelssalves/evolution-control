@@ -89,20 +89,20 @@ session_start();
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Início do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="start" class="form-control" id="start" onkeypress="DataHora(event, this)">
+                                        <input type="datetime-local" name="start" class="form-control" id="start" onkeypress="DataHora(event, this)">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Final do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="end" class="form-control" id="end"  onkeypress="DataHora(event, this)">
+                                        <input type="datetime-local" name="end" class="form-control" id="end"  onkeypress="DataHora(event, this)">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <div class="col-sm-10">
                                         <button type="button" class="btn btn-primary btn-canc-edit">Cancelar</button>
-                                        <button type="button" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-warning">Salvar</button>                                    
+                                        <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-warning">Salvar</button>                                    
                                     </div>
                                 </div>
                             </form>                            
@@ -162,7 +162,7 @@ session_start();
 
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="button" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar</button>                                    
+                                    <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar</button>                                    
                                 </div>
                             </div>
                         </form>
