@@ -22,7 +22,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
-                            <tr colspan="2">
+                            <tr rowspan="2">
                             <th><center><img style="width:150px; height:150px" src="assets/img/4.jpg" alt=""></th>
                             </tr>
                             <th><center>REFAELE YAEDA SCABIA ALVES</th>
