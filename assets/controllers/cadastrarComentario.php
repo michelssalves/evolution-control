@@ -33,7 +33,7 @@ function listar(){
        
          foreach($lista as $row){
             $txtTable = $txtTable.'<tr>
-            <td><img src="img/'.$row['id_funcionario'].'"></td>
+            <td><img src="assets/img/'.$row['id_funcionario'].'"></td>
             <td> '.$row['funcao'].'</td>
             <td> '.$row['comentario'].' </td>
             <tr>';
