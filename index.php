@@ -78,8 +78,8 @@ include 'assets/controllers/config.php';
                                 <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Profissional</label>
                                 <div class="col-sm-10">
-                                    <select name="id_profissional" class="form-control" id="A">
-                                        <option value="">Selecione</option>			
+                                    <select name="nome_profissional" class="form-control">
+                                        <option id="nome_profissional" value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM profissionais ORDER BY nome_profissional");
                                             $sql->execute();
@@ -94,8 +94,8 @@ include 'assets/controllers/config.php';
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Paciente</label>
                                 <div class="col-sm-10">
-                                    <select name="id_paciente" class="form-control" id="B">
-                                        <option value="">Selecione</option>			
+                                    <select name="nome_paciente" class="form-control">
+                                        <option id="nome_paciente" value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome_paciente");
                                             $sql->execute();
