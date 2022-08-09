@@ -73,7 +73,7 @@ include 'assets/controllers/config.php';
                         <div class="formedit">
                             <span id="msg-edit"></span>
                             <form id="editevent" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="id" id="id" >
+                                <input type="" name="id" id="id" >
                                 <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Profissional</label>
                                 <div class="col-sm-10">
