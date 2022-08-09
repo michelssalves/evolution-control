@@ -15,8 +15,8 @@ include 'assets/controllers/cadastrarComentario.php';
 <body>  
 
     <form action="" method="POST">
-            <input type="text" name="id_funcionario" value="1">
-           <textarea name="comentario" id="" cols="30" rows="10">
+            <input hidden type="text" name="id_funcionario" value="1">
+           <textarea name="comentario" id="" cols="60" rows="4">
 
            </textarea> 
         <button name="acao" value="evoluir">Enviar</button>
