@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #id').text(info.event.id);
             //$('#visualizar #nome_paciente').text(info.event.nome_paciente);
             //$('#visualizar #id').val(info.event.id);
-            $('#visualizar #title').text(info.event.title);
+            //$('#visualizar #title').text(info.event.title);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
 
