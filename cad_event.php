@@ -11,7 +11,7 @@ $data_end = str_replace('/', '-', $dados['end']);
 $data_end_conv = date("Y-m-d H:i:s", strtotime($data_end));
 
 
-$sql = $pdo->prepare("INSERT INTO events (title, color, start, end) VALUES (:title, :color, :start, :end)");
+$sql = $pdo->prepare("INSERT INTO agenda (title, color, start, end) VALUES (:title, :color, :start, :end)");
 $sql->bindParam(':title', $dados['title']);
 $sql->bindParam(':color', $dados['color']);
 $sql->bindParam(':start', $data_start_conv);

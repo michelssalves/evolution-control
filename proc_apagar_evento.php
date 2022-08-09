@@ -7,7 +7,7 @@ include 'assets/controllers/config.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if (!empty($id)) {
-    $sql = $pdo->prepare("DELETE FROM events WHERE id=:id");
+    $sql = $pdo->prepare("DELETE FROM agenda WHERE id=:id");
     $sql->bindParam("id", $id);
     $sql->execute();
 

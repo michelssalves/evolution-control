@@ -10,7 +10,7 @@ $data_start_conv = date("Y-m-d H:i:s", strtotime($data_start));
 $data_end = str_replace('/', '-', $dados['end']);
 $data_end_conv = date("Y-m-d H:i:s", strtotime($data_end));
 
-$sql = $pdo->prepare("UPDATE events SET title=:title, color=:color, start=:start, end=:end WHERE id=:id");
+$sql = $pdo->prepare("UPDATE agenda SET title=:title, color=:color, start=:start, end=:end WHERE id=:id");
 $sql->bindParam(':title', $dados['title']);
 $sql->bindParam(':color', $dados['color']);
 $sql->bindParam(':start', $data_start_conv);
