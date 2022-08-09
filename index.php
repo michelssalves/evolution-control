@@ -44,7 +44,7 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
-                                <dd hidden class="col-sm-9" id="id"></dd>
+                                <dd  class="col-sm-9" id="id"></dd>
 
                                 <dt class="col-sm-3">Título do evento</dt>
                                 <dd class="col-sm-9" id="title"></dd>
