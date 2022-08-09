@@ -22,7 +22,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">    
     <form action="" method="POST">
         <input hidden type="text" name="id_funcionario" value="1">
-        <table class="table table-striped table-bordered table-hoverable">
+        <table class="">
         <tr>
             <th>
 
