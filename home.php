@@ -26,16 +26,17 @@ include 'assets/controllers/cadastrarComentario.php';
         <table class="">
         <tr>
             <th>
-            <div class="span9">
-            <textarea name="comentario" id="" cols="40" rows="4">
-            </textarea>
-            </div>    
+ 
 
  
             </th>
         </tr>
 
            </table>
+           <div class="span9">
+            <textarea name="comentario" id="" cols="40" rows="4">
+            </textarea>
+            </div>   
         <button name="acao" value="evoluir">Enviar</button>
     </form>
     <table class="table table-striped table-bordered table-hoverable">
