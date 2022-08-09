@@ -13,7 +13,7 @@ include 'assets/controllers/cadastrarComentario.php';
     <title>Document</title>
 </head>
 <body>  
-    <form action="" method="get">
+    <form action="" method="POST">
             <input type="text" name="id_funcionario" value="1">
            <textarea name="comentario" id="" cols="30" rows="10">
 
