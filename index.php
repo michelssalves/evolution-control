@@ -110,11 +110,6 @@ session_start();
                 </div>
             </div>
         </div>
-        <script >
-            if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
-}
-        </script>
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">

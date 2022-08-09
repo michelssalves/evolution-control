@@ -61,6 +61,7 @@ $(document).ready(function () {
         })
     });
     
+
     $('.btn-canc-vis').on("click", function(){
         $('.visevent').slideToggle();
         $('.formedit').slideToggle();
@@ -70,6 +71,7 @@ $(document).ready(function () {
         $('.formedit').slideToggle();
         $('.visevent').slideToggle();
     });
+    
     
     $("#editevent").on("submit", function (event) {
         event.preventDefault();
