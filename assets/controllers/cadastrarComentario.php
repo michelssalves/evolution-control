@@ -48,6 +48,7 @@ function listarAgenda(){
     include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM horarios AS h");
+    $sql->execute();
 
 if ($sql->rowCount() > 0) {
 
