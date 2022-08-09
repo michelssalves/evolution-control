@@ -74,10 +74,11 @@ include 'assets/controllers/config.php';
                             <span id="msg-edit"></span>
                             <form id="editevent" method="POST" enctype="multipart/form-data">
                                 <input type="hidden" name="id" id="id" >
+                                <input type="" name="id" id="id_paciente" >
                                 <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Profissional</label>
                                 <div class="col-sm-10">
-                                    <select name="id_profissional" class="form-control" id="color">
+                                    <select name="id_profissional" class="form-control" id="A">
                                         <option value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM profissionais ORDER BY nome_profissional");
@@ -93,7 +94,7 @@ include 'assets/controllers/config.php';
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Paciente</label>
                                 <div class="col-sm-10">
-                                    <select name="id_paciente" class="form-control" id="color">
+                                    <select name="id_paciente" class="form-control" id="B">
                                         <option value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome_paciente");
