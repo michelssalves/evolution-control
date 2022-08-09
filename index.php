@@ -138,11 +138,10 @@ session_start();
                                         <option value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome");
-                                            $sql->bindValue(':ativado', $ativado);
                                             $sql->execute();
                                             $fetchAll = $sql->fetchAll();
                                             foreach ($fetchAll as $row) {
-                                                echo '<option value="' . $row['id_paciente'] . '">' . $row['nome'] . '</option>';
+                                                echo '<option value="'.$row['id_paciente'].'">'.$row['nome'].'</option>';
                                             }
                                         ?>
                                     </select>
