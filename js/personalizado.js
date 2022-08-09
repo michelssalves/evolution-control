@@ -53,7 +53,7 @@ $(document).ready(function () {
             success: function (retorna) {
                 if (retorna['sit']) {
                     //$("#msg-cad").html(retorna['msg']);
-                    //location.reload();
+                    location.reload();
                 } else {
                     $("#msg-cad").html(retorna['msg']);
                 }
