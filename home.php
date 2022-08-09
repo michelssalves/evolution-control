@@ -27,8 +27,8 @@ include 'assets/controllers/cadastrarComentario.php';
     <table class="table table-striped table-bordered table-hoverable">
             <thead class="thead-dark">
             <th style="width:50px;">-</th>
-            <th>Funcao</th>
-            <th>Evolucao</th>
+            <th>Área</th>
+            <th>Evolução</th>
         </thead>
         <tbody>
             <?= listar() ?>
