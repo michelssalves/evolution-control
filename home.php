@@ -1,3 +1,7 @@
+<?php
+session_start(); 
+include 'assets/controllers/cadastrarComentario.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,26 +12,12 @@
     <title>Document</title>
 </head>
 <body>  
-    <form action="">
-            <table>
-            <thead>
-                 <th></th>
-            </thead>   
-            <tbody>
-                <td>sasdasdasdas</td>
-                <td>sasdasdasdas</td>
-                <td>sasdasdasdas</td>
-                <td>sasdasdasdas</td>
-                <td>sasdasdasdas</td>
-                
-            </tbody> 
-        
-
-            </table>
-           <textarea name="" id="" cols="30" rows="10">
+    <form action="" method="POST">
+            <input type="text" name="id_funcionario" value="1">
+           <textarea name="comentario" id="" cols="30" rows="10">
 
            </textarea> 
-        <button>Enviar</button>
+        <button name="acao" value="evoluir">Enviar</button>
     </form>
 </body>
 </html>
