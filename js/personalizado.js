@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             info.jsEvent.preventDefault(); // don't let the browser navigate
             console.log(info.event);
             $('#visualizar #id').text(info.event.id);
-            $('#visualizar #nome_paciente').text(info.event.nome_paciente);
+            //$('#visualizar #nome_paciente').text(info.event.nome_paciente);
             //$('#visualizar #id').val(info.event.id);
             $('#visualizar #title').text(info.event.title);
             $('#visualizar #nome_profissional').text(info.event.nome_profissional);
