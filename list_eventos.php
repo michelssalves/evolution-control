@@ -18,7 +18,7 @@ while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         'title' => $title, 
         'color' => $color, 
         'start' => $start, 
-        'end' => $end,
+        'end' => $end
         ];
 }
 
