@@ -16,9 +16,12 @@ include 'assets/controllers/cadastrarComentario.php';
     <title>Document</title>
 </head>
 <body>  
-    
+<div class="container-md">
+        <div class="container-lg">
+            <div class="container-xl">
+                <div class="container-xxl">    
     <form action="" method="POST">
-            <input hidden type="text" name="id_funcionario" value="1">
+        <input hidden type="text" name="id_funcionario" value="1">
            <textarea name="comentario" id="" cols="60" rows="4">
 
            </textarea> 
@@ -34,5 +37,6 @@ include 'assets/controllers/cadastrarComentario.php';
             <?= listar() ?>
         </tbody>
     </table>
+                </div>    </div>   </div>   </div>   
 </body>
 </html>
