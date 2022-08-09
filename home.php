@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-include 'assets/controllers/config.php';
+//include 'assets/controllers/config.php';
 include 'assets/controllers/cadastrarComentario.php';
 ?>
 <!DOCTYPE html>
