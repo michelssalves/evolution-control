@@ -3,7 +3,6 @@ $acao = $_REQUEST['acao'];
 
 if($acao =='evoluir'){
 
-    include 'config.php';
 
     $id_funcionario = $_REQUEST['id_funcionario'];
     $comentario = $_REQUEST['comentario'];
