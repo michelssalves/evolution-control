@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Mascara para o campo data e hora
 function DataHora(evento, objeto) {
-    var keypress = (window.event) ? event.keyCode : evento.which;
+    var keypress = (window.evento) ? evento.keyCode : evento.which;
     campo = eval(objeto);
     if (campo.value == '00/00/0000 00:00:00') {
         campo.value = "";
@@ -69,7 +69,7 @@ function DataHora(evento, objeto) {
         else if (campo.value.length == conjunto5)
             campo.value = campo.value + separacao3;
     } else {
-        event.returnValue = false;
+        evento.returnValue = false;
     }
 }
 
