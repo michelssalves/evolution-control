@@ -4,12 +4,12 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+   
         <meta charset='utf-8' />
         <link href='css/core/main.min.css' rel='stylesheet' />
         <link href='css/daygrid/main.min.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/personalizado.css">
-        <script src='assets/js/block.js'></script>
         <script src='js/core/main.min.js'></script>
         <script src='js/interaction/main.min.js'></script>
         <script src='js/daygrid/main.min.js'></script>
@@ -18,6 +18,7 @@ session_start();
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="js/personalizado.js"></script>
+        <script src='assets/js/block.js'></script>
     </head>
     <body>
         <?php
