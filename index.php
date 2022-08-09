@@ -28,10 +28,10 @@ include 'assets/controllers/config.php';
             unset($_SESSION['msg']);
         }
         ?>
-        <div id='calendar'>
+        <!-- RENDERIZADO CALENDARIO-->
+        <div id='calendar'></div>
 
-        </div>
-
+        <!-- RENDERIZADO CALENDARIO-->
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -120,6 +120,9 @@ include 'assets/controllers/config.php';
                 </div>
             </div>
         </div>
+
+        <!-- MODAL PARA CADASTRAR AGENDA-->
+
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -131,14 +134,7 @@ include 'assets/controllers/config.php';
                     </div>
                     <div class="modal-body">
                         <span id="msg-cad"></span>
-                        
                         <form id="addevent" method="POST" enctype="multipart/form-data">
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Título</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="title" class="form-control" id="title" placeholder="Título do evento">
-                                </div>
-                            </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Profissional</label>
                                 <div class="col-sm-10">
