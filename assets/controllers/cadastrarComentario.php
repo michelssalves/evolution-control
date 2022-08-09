@@ -15,3 +15,27 @@ if($acao =='evoluir'){
         $sql->execute();
 
 }
+
+
+function listar(){
+
+    include 'config.php';
+
+    $sql = $pdo->prepare("SELECT * FROM comentarios");
+    $sql->execute();
+    
+    if ($sql->rowCount() > 0) {
+
+        $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
+       
+         foreach($lista as $row){
+            $txtTable = $txtTable.'<tr>
+            <td class="w3-left-align" > '.$row['id_funcionario'].'</td>
+            <td> '.$row['comentario'].' </td>
+            <tr>';
+            
+        }
+    }
+        return $txtTable;   
+
+}

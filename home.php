@@ -13,6 +13,7 @@ include 'assets/controllers/cadastrarComentario.php';
     <title>Document</title>
 </head>
 <body>  
+
     <form action="" method="POST">
             <input type="text" name="id_funcionario" value="1">
            <textarea name="comentario" id="" cols="30" rows="10">
@@ -20,5 +21,14 @@ include 'assets/controllers/cadastrarComentario.php';
            </textarea> 
         <button name="acao" value="evoluir">Enviar</button>
     </form>
+    <table class="w3-table">
+        <thead>
+            <th>Funcionario</th>
+            <th>Evolucao</th>
+        </thead>
+        <tbody>
+            <?= listar() ?>
+        </tbody>
+    </table>
 </body>
 </html>
