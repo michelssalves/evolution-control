@@ -44,8 +44,7 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
-                                <dt class="col-sm-3">ID do evento</dt>
-                                <dd class="col-sm-9" id="id"></dd>
+                                <dd hidden class="col-sm-9" id="id"></dd>
 
                                 <dt class="col-sm-3">Título do evento</dt>
                                 <dd class="col-sm-9" id="title"></dd>
@@ -122,7 +121,6 @@ include 'assets/controllers/config.php';
         </div>
 
         <!-- MODAL PARA CADASTRAR AGENDA-->
-
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
