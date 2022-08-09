@@ -27,7 +27,7 @@ session_start();
         }
         ?>
         <div id='calendar'>
-            
+
         </div>
 
         <div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -150,13 +150,13 @@ session_start();
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Início do evento</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="start" class="form-control" id="start" onkeypress="DataHora(event, this)">
+                                    <input type="text" name="start" class="form-control" id="start">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Final do evento</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="end" class="form-control" id="end"  onkeypress="DataHora(event, this)">
+                                    <input type="text" name="end" class="form-control" id="end">
                                 </div>
                             </div>
 
