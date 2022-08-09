@@ -32,7 +32,6 @@
 
         </script>
         <style>
-
             body {
                 margin: 40px 10px;
                 padding: 0;
