@@ -50,6 +50,12 @@ include 'assets/controllers/config.php';
                                 <dt class="col-sm-3">Título do evento</dt>
                                 <dd class="col-sm-9" id="title"></dd>
 
+                                <dt class="col-sm-3">Nome do Paciente</dt>
+                                <dd class="col-sm-9" id="nome_paciente"></dd>
+
+                                <dt class="col-sm-3">Nome do Profissional</dt>
+                                <dd class="col-sm-9" id="nome_profissional"></dd>
+
                                 <dt class="col-sm-3">Início do evento</dt>
                                 <dd class="col-sm-9" id="start"></dd>
 

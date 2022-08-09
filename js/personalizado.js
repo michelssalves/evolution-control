@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
             $('#visualizar #end').val(info.event.end.toLocaleString());
-            $('#visualizar #end').text(info.event.end.toLocaleString());
-            $('#visualizar #end').val(info.event.end.toLocaleString());
-            $('#visualizar #end').text(info.event.end.toLocaleString());
-            $('#visualizar #end').val(info.event.end.toLocaleString());
+            $('#visualizar #nome_paciente').text(info.event.end.toLocaleString());
+            $('#visualizar #nome_paciente').val(info.event.end.toLocaleString());
+            $('#visualizar #nome_profissional').text(info.event.end.toLocaleString());
+            $('#visualizar #nome_profissional').val(info.event.end.toLocaleString());
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
