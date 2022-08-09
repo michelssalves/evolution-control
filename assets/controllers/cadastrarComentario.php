@@ -4,19 +4,16 @@ $acao = $_REQUEST['acao'];
 
 if($acao =='evoluir'){
 
-
     $id_funcionario = $_REQUEST['id_funcionario'];
     $comentario = $_REQUEST['comentario'];
-
 
         $sql = $pdo->prepare("INSERT INTO comentarios (id_funcionario, comentario, data_hora) VALUES (:id_funcionario, :comentario, NOW())");
         $sql->bindValue(':id_funcionario', $id_funcionario);
         $sql->bindValue(':comentario', $comentario);
-
+        var_dump($sql);
         $sql->execute();
 
 }
-
 
 function listar(){
 
