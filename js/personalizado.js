@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
             $('#visualizar #end').val(info.event.end.toLocaleString());
+            $('#visualizar #end').text(info.event.end.toLocaleString());
+            $('#visualizar #end').val(info.event.end.toLocaleString());
+            $('#visualizar #end').text(info.event.end.toLocaleString());
+            $('#visualizar #end').val(info.event.end.toLocaleString());
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
