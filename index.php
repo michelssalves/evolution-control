@@ -57,7 +57,7 @@ session_start();
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            <a target="_blank" href="evoluir.php" id="apagar_evento" class="btn btn-success">Evoluir</a>
+                            <a target="_blank" href="evoluir.php?id=<?=$id_paciente?>" id="apagar_evento" class="btn btn-success">Evoluir</a>
                         </div>
                         <div class="formedit">
                             <span id="msg-edit"></span>
@@ -129,6 +129,15 @@ session_start();
                                 <label class="col-sm-2 col-form-label">Título</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="title" class="form-control" id="title" placeholder="Título do evento">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Paciente</label>
+                                <div class="col-sm-10">
+                                    <select name="color" class="form-control" id="color">
+                                        <option value="">Selecione</option>			
+                                        
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group row">
