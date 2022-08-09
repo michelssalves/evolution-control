@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #start').text(info.event.start.toLocaleString());
             $('#visualizar #start').val(info.event.start);
             $('#visualizar #end').text(info.event.start.toLocaleString());
-            $('#visualizar #end').val(info.event.end);
-    
-           // $('#visualizar #end').val(info.event.end);
+            $('#visualizar #end').val(info.event.end.toLocaleDateString());
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
