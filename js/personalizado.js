@@ -1,6 +1,3 @@
-if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
-}
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calendar.render();
 });
-
 
 $(document).ready(function () {
     $("#addevent").on("submit", function (event) {

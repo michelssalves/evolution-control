@@ -162,7 +162,7 @@ session_start();
 
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="submit" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar</button>                                    
+                                    <button type="button" name="CadEvent" id="CadEvent" value="CadEvent" class="btn btn-success">Cadastrar</button>                                    
                                 </div>
                             </div>
                         </form>
