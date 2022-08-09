@@ -1,17 +1,17 @@
 <?php
 include 'assets/controllers/config.php';
 
-$sql = $pdo->prepare("SELECT id_agenda, titulo, cor, inicio, fim FROM agenda");
+$sql = $pdo->prepare("SELECT * FROM agenda");
 $sql->execute();
 
 $eventos = [];
 
 while($row = $sql->fetch(PDO::FETCH_ASSOC)){
-    $id_agenda = $row['id_agenda'];
-    $titulo = $row['titulo'];
-    $cor = $row['cor'];
-    $inicio = $row['inicio'];
-    $fim = $row['fim'];
+    $id_agenda = $row['id'];
+    $titulo = $row['title'];
+    $cor = $row['color'];
+    $inicio = $row['start'];
+    $fim = $row['end'];
     
     $eventos[] = [
         'id_agenda' => $id_agenda, 
