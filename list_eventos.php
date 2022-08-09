@@ -15,12 +15,17 @@ while($row = $sql->fetch(PDO::FETCH_ASSOC)){
     $start = $row['start'];
     $end = $row['end'];
     $nome_paciente = $row['nome_paciente'];
+    $id_paciente = $row['id_paciente'];
     $nome_profissional = $row['nome_profissional'];
+    $id_profissional = $row['id_profissional'];
+
     
     $eventos[] = [
         'id' => $id, 
         'nome_paciente' => $nome_paciente, 
+        'id_paciente' => $id_paciente, 
         'nome_profissional' => $nome_profissional,
+        'id_profissional' => $id_profissional,
         'color' => $color, 
         'start' => $start, 
         'end' => $end,

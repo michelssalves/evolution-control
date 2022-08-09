@@ -46,6 +46,10 @@ include 'assets/controllers/config.php';
                             <dl class="row">
                                 <dt class="col-sm-3">Id do evento</dt>
                                 <dd  class="col-sm-9" id="id"></dd>
+                                <dt class="col-sm-3">Id do paciente</dt>
+                                <dd  class="col-sm-9" id="id_paciente"></dd>
+                                <dt class="col-sm-3">Id do profissional</dt>
+                                <dd  class="col-sm-9" id="id_profissional"></dd>
 
                                 <dt class="col-sm-3">Início do evento</dt>
                                 <dd class="col-sm-9" id="start"></dd>
