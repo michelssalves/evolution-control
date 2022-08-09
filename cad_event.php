@@ -11,11 +11,13 @@ $data_end = str_replace('/', '-', $dados['end']);
 $data_end_conv = date("Y-m-d H:i:s", strtotime($data_end));
 
 
-$sql = $pdo->prepare("INSERT INTO agenda (title, color, start, end) VALUES (:title, :color, :start, :end)");
+$sql = $pdo->prepare("INSERT INTO agenda (title, color, start, end, id_paciente, id_profissional) VALUES (:title, :color, :start, :end, :id_paciente, :id_profissional)");
 $sql->bindParam(':title', $dados['title']);
 $sql->bindParam(':color', $dados['color']);
 $sql->bindParam(':start', $data_start_conv);
 $sql->bindParam(':end', $data_end_conv);
+$sql->bindParam(':id_paciente', $dados['id_paciente']);
+$sql->bindParam(':id_profissional', $dados['id_profissional']);
 $sql->execute();
 
 if ($sql) {

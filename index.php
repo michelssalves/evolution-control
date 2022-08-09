@@ -135,7 +135,23 @@ include 'assets/controllers/config.php';
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Paciente</label>
                                 <div class="col-sm-10">
-                                    <select name="color" class="form-control" id="color">
+                                    <select name="id_profissional" class="form-control" id="color">
+                                        <option value="">Selecione</option>			
+                                        <?php
+                                            $sql = $pdo->prepare("SELECT * FROM profissionais ORDER BY nome");
+                                            $sql->execute();
+                                            $fetchAll = $sql->fetchAll();
+                                            foreach ($fetchAll as $row) {
+                                                echo '<option value="'.$row['id_profissional'].'">'.$row['nome'].'</option>';
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Paciente</label>
+                                <div class="col-sm-10">
+                                    <select name="id_paciente" class="form-control" id="color">
                                         <option value="">Selecione</option>			
                                         <?php
                                             $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome");

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         locale: 'pt-br',
-        plugins: ['dayGrid'],
+        plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
         editable: true,
         eventLimit: true,
