@@ -26,7 +26,8 @@ include 'assets/controllers/cadastrarComentario.php';
     </form>
     <table class="table table-striped table-bordered table-hoverable">
             <thead class="thead-dark">
-            <th>Funcionario</th>
+            <th>Nome</th>
+            <th>Funcao</th>
             <th>Evolucao</th>
         </thead>
         <tbody>
