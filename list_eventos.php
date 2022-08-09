@@ -1,7 +1,9 @@
 <?php
 include 'assets/controllers/config.php';
 
-$sql = $pdo->prepare("SELECT * FROM agenda AS a JOIN pacientes AS pac ON a.id_paciente = pac.id_paciente JOIN profissionais AS pro ON pro.id_profissional = a.id_profissional");
+$sql = $pdo->prepare("SELECT * FROM agenda AS a 
+JOIN pacientes AS pac ON a.id_paciente = pac.id_paciente 
+JOIN profissionais AS pro ON pro.id_profissional = a.id_profissional");
 $sql->execute();
 
 $eventos = [];
