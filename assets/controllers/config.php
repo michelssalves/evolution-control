@@ -1,5 +1,5 @@
 <?php
-$db_name = '338658684_ambiente_de_te';
+$db_name ='338658684_ambiente_de_te';
 $db_host= 'localhost';
 $db_user= '338658684_ambiente_de_te';
 $db_pass= 'Cavalo*123';
