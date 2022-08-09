@@ -22,9 +22,9 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
-                            <th>-</th>
+                            <th><img src="assets/img/4.jpg" alt=""></th>
                             <th><center>Paciente</th>
-                            <th><center>Evolução</th>
+                            <th><center>REFAELE YAEDA SCABIA ALVES</th>
                         </thead>
                     </table>
                     <form action="" method="POST">
