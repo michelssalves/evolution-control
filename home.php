@@ -21,7 +21,7 @@ include 'assets/controllers/cadastrarComentario.php';
             <div class="container-xl">
                 <div class="container-xxl">
                     <form action="" method="POST">
-                        <input hidden type="text" name="id_funcionario" value="1">
+                        <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
                             <textarea name="comentario" id="" cols="40" rows="4"></textarea>
                         </div>
