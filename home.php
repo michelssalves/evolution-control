@@ -16,7 +16,7 @@ include 'assets/controllers/cadastrarComentario.php';
     <title>Document</title>
 </head>
 <body>  
-
+    
     <form action="" method="POST">
             <input hidden type="text" name="id_funcionario" value="1">
            <textarea name="comentario" id="" cols="60" rows="4">
