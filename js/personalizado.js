@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(info.event);
             $('#visualizar #id').text(info.event.id);
             $('#visualizar #id').val(info.event.id);
-            $('#visualizar #title').text(info.event.title);
-            $('#visualizar #title').val(info.event.title);
+            $('#visualizar #title').text(info.event.nome_paciente);
+            $('#visualizar #title').val(info.event.nome_paciente);
             $('#visualizar #start').text(info.event.start.toLocaleString());
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
