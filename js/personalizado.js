@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #id_paciente').val(info.event.extendedProps.id_paciente);
             $('#visualizar #id_profissional').text(info.event.extendedProps.id_profissional);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
-            $('#visualizar #B').val(info.event.extendedProps.nome_profissional);
+            $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
-            $('#visualizar #A').val(info.event.extendedProps.nome_paciente);
+            $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
             $('#visualizar #start').text(info.event.start.toLocaleString());
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
