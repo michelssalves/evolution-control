@@ -22,8 +22,8 @@ function listar(){
     include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM comentarios AS c
-    JOIN funcionarios AS f
-    ON f.id_funcionario = c.id_funcionario
+    JOIN profissionais AS p
+    ON p.id_profissional = c.id_profissional
     ");
     $sql->execute();
     
@@ -33,7 +33,7 @@ function listar(){
        
          foreach($lista as $row){
             $txtTable = $txtTable.'<tr>
-            <td><img src="assets/img/'.$row['id_funcionario'].'.jpg" style="width:50px; height:50px"></td>
+            <td><img src="assets/img/'.$row['id_profissional'].'.jpg" style="width:50px; height:50px"></td>
             <td><center> '.$row['funcao'].'</td>
             <td><center> '.$row['comentario'].' </td>
             <tr>';
