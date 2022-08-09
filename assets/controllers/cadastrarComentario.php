@@ -43,3 +43,24 @@ function listar(){
         
 
 }
+function listarAgenda(){
+
+    include 'config.php';
+
+    $sql = $pdo->prepare("SELECT * FROM horarios AS h");
+
+if ($sql->rowCount() > 0) {
+
+    $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
+   
+     foreach($lista as $row){
+        $txtTable = $txtTable.'<tr>
+        <td>'.$row['horarios'].'</td>
+        <tr>';
+        
+    }
+}
+    return $txtTable; 
+
+
+}

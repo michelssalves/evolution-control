@@ -33,7 +33,6 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
-                            <th style="width:50px;">-</th>
                             <th><center>Horarios</th>
                             <th><center>T.O IS-Fer</th>
                             <th><center>T.O A-Mayumi</th>
@@ -43,7 +42,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <th><center>T.O - Aline</th>
                         </thead>
                         <tbody>
-            
+                            <?= listarAgenda() ?>
                         </tbody>
                     </table>
                 </div>
