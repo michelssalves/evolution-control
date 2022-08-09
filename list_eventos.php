@@ -10,11 +10,10 @@ $eventos = [];
 
 while($row = $sql->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
-    $title = $row['title'];
+    $title = $row['nome_paciente'];
     $color = $row['color'];
     $start = $row['start'];
     $end = $row['end'];
-    $nome_paciente = $row['nome_paciente'];
     $nome_profissional = $row['nome_profissional'];
     
     $eventos[] = [
