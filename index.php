@@ -136,7 +136,15 @@ session_start();
                                 <div class="col-sm-10">
                                     <select name="color" class="form-control" id="color">
                                         <option value="">Selecione</option>			
-                                        
+                                        <?php
+                                            $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome");
+                                            $sql->bindValue(':ativado', $ativado);
+                                            $sql->execute();
+                                            $fetchAll = $sql->fetchAll();
+                                            foreach ($fetchAll as $row) {
+                                                echo '<option value="' . $row['id_paciente'] . '">' . $row['nome'] . '</option>';
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                             </div>
