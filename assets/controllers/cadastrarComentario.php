@@ -30,7 +30,7 @@ function listar(){
        
          foreach($lista as $row){
             $txtTable = $txtTable.'<tr>
-            <td class="w3-left-align" > '.$row['id_funcionario'].'</td>
+            <td> '.$row['id_funcionario'].'</td>
             <td> '.$row['comentario'].' </td>
             <tr>';
             

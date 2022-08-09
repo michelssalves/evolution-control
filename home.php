@@ -21,8 +21,8 @@ include 'assets/controllers/cadastrarComentario.php';
            </textarea> 
         <button name="acao" value="evoluir">Enviar</button>
     </form>
-    <table class="w3-table">
-        <thead>
+    <table id="t1" class="w3-table w3-table-all sortable " border="1">
+        <thead class="thead-dark sorttable">
             <th>Funcionario</th>
             <th>Evolucao</th>
         </thead>
