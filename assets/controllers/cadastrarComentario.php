@@ -21,7 +21,10 @@ function listar(){
 
     include 'config.php';
 
-    $sql = $pdo->prepare("SELECT * FROM comentarios");
+    $sql = $pdo->prepare("SELECT * FROM comentarios AS c
+    JOIN funcionarios AS f
+    ON f.id_funcionario = c.id_funcionario
+    ");
     $sql->execute();
     
     if ($sql->rowCount() > 0) {
@@ -30,7 +33,7 @@ function listar(){
        
          foreach($lista as $row){
             $txtTable = $txtTable.'<tr>
-            <td> '.$row['id_funcionario'].'</td>
+            <td> '.$row['nome'].'</td>
             <td> '.$row['comentario'].' </td>
             <tr>';
             
