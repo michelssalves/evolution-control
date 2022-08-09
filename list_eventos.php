@@ -1,7 +1,7 @@
 <?php
 include 'assets/controllers/config.php';
 
-$sql = $pdo->prepare("SELECT id, titulo, cor, inicio, fim FROM agenda");
+$sql = $pdo->prepare("SELECT id_agenda, titulo, cor, inicio, fim FROM agenda");
 $sql->execute();
 
 $eventos = [];
