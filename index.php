@@ -44,12 +44,12 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
-                                <dt class="col-sm-3">Id do evento</dt>
-                                <dd  class="col-sm-9" id="id"></dd>
-                                <dt class="col-sm-3">Id do paciente</dt>
-                                <dd  class="col-sm-9" id="id_paciente"></dd>
-                                <dt class="col-sm-3">Id do profissional</dt>
-                                <dd  class="col-sm-9" id="id_profissional"></dd>
+                                
+                                <dd class="col-sm-9" id="id"></dd>
+                                
+                                <dd class="col-sm-9" id="id_paciente"></dd>
+                               
+                                <dd class="col-sm-9" id="id_profissional"></dd>
 
                                 <dt class="col-sm-3">Início do evento</dt>
                                 <dd class="col-sm-9" id="start"></dd>
@@ -71,12 +71,38 @@ include 'assets/controllers/config.php';
                         <div class="formedit">
                             <span id="msg-edit"></span>
                             <form id="editevent" method="POST" enctype="multipart/form-data">
-                                <input type="hidden" name="id" id="id" >
+                                <input type="" name="id" id="id" >
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Título</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" name="title" class="form-control" id="title" placeholder="Título do evento">
-                                    </div>
+                                <label class="col-sm-2 col-form-label">Profissional</label>
+                                <div class="col-sm-10">
+                                    <select name="id_profissional" class="form-control" id="color">
+                                        <option value="">Selecione</option>			
+                                        <?php
+                                            $sql = $pdo->prepare("SELECT * FROM profissionais ORDER BY nome_profissional");
+                                            $sql->execute();
+                                            $fetchAll = $sql->fetchAll();
+                                            foreach ($fetchAll as $row) {
+                                                echo '<option value="'.$row['id_profissional'].'">'.$row['nome_profissional'].'</option>';
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Paciente</label>
+                                <div class="col-sm-10">
+                                    <select name="id_paciente" class="form-control" id="color">
+                                        <option value="">Selecione</option>			
+                                        <?php
+                                            $sql = $pdo->prepare("SELECT * FROM pacientes ORDER BY nome_paciente");
+                                            $sql->execute();
+                                            $fetchAll = $sql->fetchAll();
+                                            foreach ($fetchAll as $row) {
+                                                echo '<option value="'.$row['id_paciente'].'">'.$row['nome_paciente'].'</option>';
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Color</label>
