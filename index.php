@@ -57,6 +57,7 @@ session_start();
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
+                            <a href="" id="apagar_evento" class="btn btn-success">Evoluir</a>
                         </div>
                         <div class="formedit">
                             <span id="msg-edit"></span>
