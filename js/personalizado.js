@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
             $("#apagar_evento").attr("href", "proc_apagar_evento.php?id=" + info.event.id);
             info.jsEvent.preventDefault(); // don't let the browser navigate
             console.log(info.event);
-            //$('#visualizar #id').text(info.event.id);
-            $('#visualizar #id').val(info.event.id);
+            $('#visualizar #id').text(info.event.id);
+            //$('#visualizar #id').val(info.event.id);
             $('#visualizar #title').text(info.event.nome_paciente);
             $('#visualizar #title').val(info.event.nome_paciente);
             $('#visualizar #start').text(info.event.start.toLocaleString());
