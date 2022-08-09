@@ -7,7 +7,7 @@ if($acao =='evoluir'){
     $id_profissional = $_REQUEST['id_profissional'];
     $comentario = $_REQUEST['comentario'];
 
-        $sql = $pdo->prepare("INSERT INTO comentarios (id_profissional, comentario, data_hora) VALUES (:id_funcionario, :comentario, NOW())");
+        $sql = $pdo->prepare("INSERT INTO comentarios (id_profissional, comentario, data_hora) VALUES (:id_profissional, :comentario, NOW())");
         $sql->bindValue(':id_profissional', $id_profissional);
         $sql->bindValue(':comentario', $comentario);
         var_dump($sql);
