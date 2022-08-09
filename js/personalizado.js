@@ -25,10 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #start').val(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
             $('#visualizar #end').val(info.event.end.toLocaleString());
-            $('#visualizar #nome_paciente').val(info.event.nome_paciente);
-            $('#visualizar #nome_paciente').text(info.event.nome_paciente);
-            $('#visualizar #nome_profissional').val(info.event.nome_profissional);
-            $('#visualizar #nome_profissional').text(info.event.nome_profissional);
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
