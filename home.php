@@ -22,7 +22,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">    
     <form action="" method="POST">
         <input hidden type="text" name="id_funcionario" value="1">
-           <textarea name="comentario" id="" cols="30" rows="4">
+           <textarea name="comentario" id="" cols="40" rows="4">
 
            </textarea> 
         <button name="acao" value="evoluir">Enviar</button>
