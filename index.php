@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'assets/controllers/config.php';
 ?>
 <!DOCTYPE html>
 <html>
