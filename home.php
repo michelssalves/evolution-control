@@ -22,9 +22,17 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">    
     <form action="" method="POST">
         <input hidden type="text" name="id_funcionario" value="1">
-           <textarea name="comentario" id="" cols="40" rows="4">
+        <table class="table table-striped table-bordered table-hoverable">
+        <tr>
+            <th>
 
-           </textarea> 
+            <textarea name="comentario" id="" cols="40" rows="4">
+
+</textarea> 
+            </th>
+        </tr>
+
+           </table>
         <button name="acao" value="evoluir">Enviar</button>
     </form>
     <table class="table table-striped table-bordered table-hoverable">
