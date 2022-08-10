@@ -37,7 +37,7 @@ include 'assets/controllers/cadastrarComentario.php';
                     </form>
                     <table id="example" class="w3-table w3-table-all " border="1">    
                         <thead class="thead-dark">
-                            <th style="width:50px;">-</th>
+                            <th style="width:50px;">#</th>
                             <th><center>Área</th>
                             <th><center>Evolução</th>
                         </thead>
