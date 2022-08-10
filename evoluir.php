@@ -1,7 +1,6 @@
 <?php
 session_start();
 $id_paciente = $_REQUEST['id_pac'];
-$_SESSION['paciente'] = $id_paciente;
 include 'assets/controllers/cadastrarComentario.php';
 
 ?>
@@ -24,7 +23,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <table class="table table-striped table-bordered table-hoverable">
                     <thead class="thead-dark">
-                            <?= listarCabecalho($_SESSION['paciente']) ?>
+                            <?= listarCabecalho($id_paciente) ?>
                     </thead>
                     </table>
                     <form action="" method="POST">
@@ -41,7 +40,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <th><center>Evolução</th>
                         </thead>
                         <tbody>
-                            <?= listar($_SESSION['paciente']) ?>
+                            <?= listar($id_paciente) ?>
                         </tbody>
                     </table>
                 </div>

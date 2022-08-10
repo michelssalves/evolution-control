@@ -69,9 +69,9 @@ include 'assets/controllers/config.php';
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            <form action="evoluir.php" method="POST">
+                            <form action="" method="POST">
                             <input type="text" name="id_pac" id="id_pac">
-                            <button type="submit" class="btn btn-success">Evoluir</button>
+                            <a href="evoluir.php?id=<?$_GET['id_pac']?>"><button type="submit" class="btn btn-success">Evoluir</button></a>
                             </form>
                         </div>
                         <div class="formedit">
