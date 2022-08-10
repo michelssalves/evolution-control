@@ -68,7 +68,7 @@ include 'assets/controllers/config.php';
 
                             </dl>
                             <div class="form-group row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-3">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
