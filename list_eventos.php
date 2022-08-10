@@ -11,7 +11,7 @@ $eventos = [];
 
 while($row = $sql->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
-    $title = $row['title'];
+    $title = $row['nome_paciente'];
     $color = $row['color'];
     $start = dmaHLocal($row['start']);
     $end = dmaHLocal($row['end']);
