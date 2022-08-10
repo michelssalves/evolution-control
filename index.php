@@ -75,9 +75,9 @@ include 'assets/controllers/config.php';
                             <div class="col-sm-3">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             </div>
-                            <div class="col-sm-3">
+                           
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            </div>
+                           
                             </div>
                             <input hidden type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
                             </form>
