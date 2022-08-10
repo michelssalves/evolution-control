@@ -224,6 +224,7 @@ include 'assets/controllers/config.php';
                                 <label class="col-sm-2 col-form-label">Final do evento</label>
                                 <div class="col-sm-10">
                                     <input type="datetime-local" name="end" class="form-control" id="end">
+                                    
                                 </div>
                             </div>
 
