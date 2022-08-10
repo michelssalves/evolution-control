@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
             $('#visualizar #nome_paciente').val(info.event.extendedProps.nome_paciente);
             $('#visualizar #start').text(info.event.start.toLocaleString());
-            $('#visualizar #start').val(info.event.start.toLocaleString());
+            $('#visualizar #start').data(info.event.start.toLocaleString());
             $('#visualizar #end').text(info.event.end.toLocaleString());
-            $('#visualizar #end').val(info.event.end.toLocaleString());
+            $('#visualizar #end').data(info.event.end.toLocaleString());
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
