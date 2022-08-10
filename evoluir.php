@@ -52,5 +52,6 @@ include 'assets/controllers/cadastrarComentario.php';
 </div>
 </body>
 </html>
+<script src="assets/js/vanillaModal.js"></script>
 <script src="assets/js/filtroTabela1.js"></script>
 <script src="assets/js/filtroTabela2.js"></script>
