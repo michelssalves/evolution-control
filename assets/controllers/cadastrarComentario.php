@@ -14,15 +14,17 @@ if($acao =='evoluir'){
 
 }
 
-function listar(){
+function listar($id_paciente){
 
     include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM comentarios AS c
     JOIN profissionais AS p
     ON p.id_profissional = c.id_profissional
+    WHERE id_paciente = :id_paciente
     ORDER BY c.data_hora DESC
     ");
+    $sql->bindValue(':id_paciente', $id_paciente);
     $sql->execute();
     
     if ($sql->rowCount() > 0) {
@@ -39,9 +41,30 @@ function listar(){
         }
     }
         return $txtTable;   
+}
+function listarCabecalho($id_paciente){
 
-        
+    include 'config.php';
 
+    $sql = $pdo->prepare("SELECT * FROM pacientes WHERE id_paciente = :id_paciente");
+    $sql->bindValue(':id_paciente', $id_paciente);
+    $sql->execute();
+
+    if ($sql->rowCount() > 0) {
+
+        $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
+       
+         foreach($lista as $row){
+
+            $txtTable = $txtTable.'<tr>
+            <th rowspan="2"><center><img style="width:150px; height:150px" src="assets/img/'.$row['id_paciente'].'.jpg" alt=""></th>
+            <th><center>PACIENTE</th>
+            </tr>
+            <th><center>'.$row['nome_paciente'].'</th>';
+        }
+    }
+    return $txtTable; 
+   
 }
 function listarAgenda(){
 
