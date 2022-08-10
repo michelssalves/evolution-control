@@ -128,13 +128,13 @@ include 'assets/controllers/config.php';
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Início do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="start" class="form-control" id="start">
+                                        <input type="datetime-local" name="start" class="form-control" id="start">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Final do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="end" class="form-control" id="end">
+                                        <input type="datetime-local" name="end" class="form-control" id="end">
                                     </div>
                                 </div>
 
