@@ -29,18 +29,11 @@ include 'assets/controllers/cadastrarComentario.php';
                         <input hidden type="text" name="id_paciente" value="<?=$id_paciente?>">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
-                            <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
+                            <textarea style=" font-size: 50px;"required name="comentario" id="" cols="40" rows="4"></textarea>
                         </div>
                         <button name="acao" value="evoluir" class="btn btn-success">Enviar</button>
                         <a href="index.php" class="btn btn-info">Voltar</a>
                     </form>
-                    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.25.0/sweetalert2.all.min.js"></script>
-
-<button class='btn' >Clique</button>
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
                             <th style="width:50px;">-</th>
