@@ -29,7 +29,7 @@ include 'assets/controllers/cadastrarComentario.php';
                         <input hidden type="text" name="id_paciente" value="<?=$id_paciente?>">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
-                            <textarea style=" font-size: 50px;"required name="comentario" id="" cols="40" rows="4"></textarea>
+                            <textarea style=" font-size: 30px;"required name="comentario" id="" cols="40" rows="4"></textarea>
                         </div>
                         <button name="acao" value="evoluir" class="btn btn-success">Enviar</button>
                         <a href="index.php" class="btn btn-info">Voltar</a>
