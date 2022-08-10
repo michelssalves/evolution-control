@@ -1,6 +1,7 @@
 <?php
 
 $acao = $_REQUEST['acao'];
+
 include 'config.php';
 
 if($acao =='evoluir'){
@@ -18,6 +19,7 @@ if($acao =='evoluir'){
 
 function listar($id_paciente){
 
+    $id_paciente = $_REQUEST['$id_paciente'];
     include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM comentarios AS c
