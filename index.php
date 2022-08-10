@@ -28,7 +28,7 @@ include 'assets/controllers/config.php';
         }
         ?>
         <!-- RENDERIZADO CALENDARIO-->
-        <div style="width:50px" id='calendar'>
+        <div style="width:300px" id='calendar'>
 
         </div>
 
