@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return {
                 cachebuster: new Date().valueOf(),
                 start: nowDate,
-                end: nowDate.clone().add(1, 'week')
+                end: nowDate.clone().add(1, 'months')
             };
         },
         eventClick: function (info) {
