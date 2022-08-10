@@ -14,7 +14,7 @@ $(document).ready( function ()
 				"sInfoFiltered": "(Filtrados de _MAX_ registros)",
 				"sInfoPostFix": "",
 				"sInfoThousands": ".",
-				"sLengthMenu": "_MENU_ resultados por pagina",
+				"sLengthMenu": "resultados por pagina _MENU_ ",
 				"sLoadingRecords": "Carregando...",
 				"sProcessing": "Processando...",
 				"sZeroRecords": "Nenhum registro encontrado",
