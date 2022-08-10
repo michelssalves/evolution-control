@@ -68,11 +68,11 @@ include 'assets/controllers/config.php';
 
                             </dl>
                             <div class="form-group row">
-                            <div class="col-sm-1">
+                            <div class="col-sm-3">
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
                             <button type="submit" class="btn btn-success">Evoluir</button>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-9">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             </div>
                            
