@@ -7,17 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
-        firstDay: moment().day(),
         weekends: false,
         editable: true,
         eventLimit: true,
+        validRange: {
+            start: moment().day(),         // data atual
+            end:  moment().add(15, 'days') // data atual + 14 (15 com a data atual)
+         },
         events: 'list_eventos.php',
         
-      //  extraParams: function () {
-        //    return {
-          //      cachebuster: new Date().valueOf(),
-            //};
-        //},
+        extraParams: function () {
+           return {
+               cachebuster: new Date().valueOf(),
+            };
+        },
 
   
         eventClick: function (info) {
