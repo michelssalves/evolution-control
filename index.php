@@ -44,11 +44,12 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
+
                                 <dt  class="col-sm-3">id evento</dt>
                                 <dd  class="col-sm-9" id="id"></dd>
 
                                 <dt hidden class="col-sm-3">id paciente</dt>
-                                <dd name="id_paciente" hidden class="col-sm-9" id="id_paciente"></dd>
+                                <dd hidden class="col-sm-9" id="id_paciente"></dd>
 
                                 <dt hidden class="col-sm-3">id profssional </dt>
                                 <dd hidden class="col-sm-9" id="id_profissional"></dd>
