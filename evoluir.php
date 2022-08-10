@@ -1,7 +1,6 @@
 <?php
 session_start();
 echo $id_paciente = $_REQUEST['id_pac'];
-include 'assets/controllers/config.php';
 include 'assets/controllers/cadastrarComentario.php';
 
 ?>
