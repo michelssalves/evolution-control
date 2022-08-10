@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #nome_paciente').val(info.event.extendedProps.nome_paciente);
             $('#visualizar #start').text(info.event.start.toLocaleString());
             //$('#visualizar #start').val(info.event.start.toLocaleString());
-            $('#visualizar #start').val(info.event.start.format('Y-m-dT H:i'));
+            $('#visualizar #start').val(info.event.start.format('Y-m-d T H:i'));
             $('#visualizar #end').text(info.event.end.toLocaleString());
            // $('#visualizar #end').val(info.event.end.toLocaleString());
-            $('#visualizar #end').val(info.event.end.format('Y-m-dT H:i'));
+            $('#visualizar #end').val(info.event.end.format('Y-m-d T H:i'));
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
