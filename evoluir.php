@@ -2,7 +2,6 @@
 session_start();
 $id_paciente = $_REQUEST['id_paciente'];
 include 'assets/controllers/cadastrarComentario.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +25,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <?= listarCabecalho($id_paciente) ?>
                     </thead>
                     </table>
-                    <form action="" method="POST">
+                    <form action="evoluir.php?id_paciente=<?=$id_paciente?>" method="POST">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
                             <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
