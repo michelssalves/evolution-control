@@ -68,7 +68,10 @@ function listarCabecalho($id_paciente){
             <th><center>TIPO</th>
             <th><center>IDADE</th>
             </tr>
-            <th><center>'.$row['nome_paciente'].'</th>';
+            <th><center>'.$row['nome_paciente'].'</th>
+            <th><center>Espectro Altista</th>
+            <th><center>5</th>
+            ';
         }
     }
     return $txtTable; 
