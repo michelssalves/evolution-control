@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
         eventLimit: true,
         events: 'list_eventos.php',
         
-        extraParams: function () {
-            return {
-                cachebuster: new Date().valueOf(),
-            };
-        },
+      //  extraParams: function () {
+        //    return {
+          //      cachebuster: new Date().valueOf(),
+            //};
+        //},
 
   
         eventClick: function (info) {
