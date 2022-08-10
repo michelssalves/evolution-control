@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         events: 'list_eventos.php',
         extraParams: function () {
             return {
-                cachebuster: new Date().valueOf(),
+                //cachebuster: new Date().valueOf(),
                 start: nowDate,
                 end: nowDate.clone().add(1, 'months')
             };
