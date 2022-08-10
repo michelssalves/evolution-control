@@ -67,15 +67,15 @@ include 'assets/controllers/config.php';
                                 <dd class="col-sm-9" id="nome_profissional"></dd>
 
                             </dl>
-                            <div class="row mx-lg-n5">
-                            <div class="col py-3 px-lg-1">
+                            <div class="container">
+                            <div class="text-left">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
-                            </div>
-                            <div class="col py-3 px-lg-1">
+                            
+                            
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            </div>
+                           
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
-                            <div class="col py-3 px-lg-1">
+                      
                             <button type="submit" class="btn btn-success">Evoluir</button>
                           
                             </div>    
