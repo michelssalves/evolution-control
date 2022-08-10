@@ -67,22 +67,24 @@ include 'assets/controllers/config.php';
                                 <dd class="col-sm-9" id="nome_profissional"></dd>
 
                             </dl>
+                            <div class="container">
                             <div class="row">
-                            <div class="col-">
+                           
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
-                            </div>
-                            <div class="col-">
+                           
+                            
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            </div>
+                           
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
-                            <div class="col-">
+                            
                             <button type="submit" class="btn btn-success">Evoluir</button>
-                            </div>
+                          
                             </div>    
                        
                             <input hidden type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
                             </form>
                         </div>
+    </div>
                         <script>
                             function ipChange(elementoIp){
                             let urlApi = 'evoluir.php?id_paciente';
