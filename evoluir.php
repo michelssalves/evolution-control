@@ -20,6 +20,7 @@ include 'assets/controllers/cadastrarComentario.php';
         <div class="container-lg">
             <div class="container-xl">
                 <div class="container-xxl">
+                    <div class="container">
                     <table class="table table-striped table-bordered table-hoverable">
                     <thead class="thead-dark">
                             <?= listarCabecalho($id_paciente) ?>
@@ -47,6 +48,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
