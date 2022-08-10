@@ -71,7 +71,7 @@ include 'assets/controllers/config.php';
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             <form action="" method="POST">
                             <input type="text" name="id_pac" id="id_pac">
-                            <a href="evoluir.php?id=<?$_GET['id_pac']?>"></a>
+                            <a href="evoluir.php?id=<?$_GET['id_pac']?>">ASDASD</a>
                             <button type="submit" class="btn btn-success">Evoluir</button>
                             </form>
                         </div>
