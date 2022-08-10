@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #id').text(info.event.id);
             $('#visualizar #id').val(info.event.id);
             $('#visualizar #id_paciente').text(info.event.extendedProps.id_paciente);
-            $('#visualizar #id_paciente').val(info.event.extendedProps.id_paciente);
+            $('#visualizar #id_pac').val(info.event.extendedProps.id_paciente);
             $('#visualizar #id_profissional').text(info.event.extendedProps.id_profissional);
             $('#visualizar #nome_profissional').text(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_profissional').val(info.event.extendedProps.nome_profissional);
