@@ -5,8 +5,8 @@ include 'config.php';
 
 if($acao =='evoluir'){
 
-    $id_profissional = $_REQUEST['id_profissional'];
-    $comentario = $_REQUEST['comentario'];
+   echo $id_profissional = $_REQUEST['id_profissional'];
+   echo $comentario = $_REQUEST['comentario'];
 
         $sql = $pdo->prepare("INSERT INTO comentarios (id_profissional, comentario, data_hora) VALUES (:id_profissional, :comentario, NOW())");
         $sql->bindValue(':id_profissional', $id_profissional);
