@@ -1,6 +1,7 @@
 <?php
 
 $acao = $_REQUEST['acao'];
+include 'config.php';
 
 if($acao =='evoluir'){
 

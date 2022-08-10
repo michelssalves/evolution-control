@@ -25,7 +25,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <?= listarCabecalho($id_paciente) ?>
                     </thead>
                     </table>
-                    <form action="evoluir.php?id_paciente=<?=$id_paciente?>" method="POST">
+                    <form action="" method="POST">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
                             <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
