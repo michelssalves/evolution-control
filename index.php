@@ -69,7 +69,7 @@ include 'assets/controllers/config.php';
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            <form  method="POST">
+                            <form method="GET">
                             <input type="text" name="id_pac" id="id_pac">
                             <a target="_blank" href="evoluir.php" id="apagar_evento" class="btn btn-success">Evoluir</a>
                             </form>
