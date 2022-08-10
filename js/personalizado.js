@@ -26,19 +26,19 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#visualizar #nome_profissional').val(info.event.extendedProps.nome_profissional);
             $('#visualizar #nome_paciente').text(info.event.extendedProps.nome_paciente);
             $('#visualizar #nome_paciente').val(info.event.extendedProps.nome_paciente);
-            $('#visualizar #start').text(info.event.start);
-            $('#visualizar #start').val(info.event.start);
-            $('#visualizar #end').text(info.event.end);
-            $('#visualizar #end').val(info.event.end);
+            $('#visualizar #start').text(info.event.start.toLocaleString());
+            $('#visualizar #start').val(info.event.start.toLocaleString());
+            $('#visualizar #end').text(info.event.end.toLocaleString());
+            $('#visualizar #end').val(info.event.end.toLocaleString());
             $('#visualizar #color').val(info.event.backgroundColor);
             $('#visualizar').modal('show');
         },
         selectable: true,
         select: function (info) {
             //alert('Início do evento: ' + info.start.toLocaleString());
-            $('#cadastrar #start').val(info.start);
+            $('#cadastrar #start').val(info.start.toLocaleString());
             //$('#cadastrar #end').val(info.end.toLocaleString());
-            $('#cadastrar #end').val(info.end);
+            $('#cadastrar #end').val(info.end.toLocaleString());
             $('#cadastrar').modal('show');
         }
     });
