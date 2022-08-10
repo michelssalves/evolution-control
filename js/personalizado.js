@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        validRange: function(nowDate) {
+    return {
+      start: nowDate,
+      end: nowDate.clone().add(1, 'months')
+    };
+},
+
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
@@ -10,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         events: 'list_eventos.php',
         extraParams: function () {
             return {
-                //cachebuster: new Date().valueOf(),
-                start: nowDate,
-                end: nowDate.clone().add(1, 'months')
+                cachebuster: new Date().valueOf(),
             };
         },
+
+  
         eventClick: function (info) {
             $("#apagar_evento").attr("href", "proc_apagar_evento.php?id=" + info.event.id);
             info.jsEvent.preventDefault(); // don't let the browser navigate
