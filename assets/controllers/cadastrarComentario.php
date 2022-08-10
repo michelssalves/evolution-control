@@ -6,12 +6,14 @@ include 'config.php';
 
 if($acao =='evoluir'){
 
-   echo $id_profissional = $_REQUEST['id_profissional'];
-   echo $comentario = $_REQUEST['comentario'];
+        $id_profissional = $_REQUEST['id_profissional'];
+        $comentario = $_REQUEST['comentario'];
+        $id_paciente = $_REQUEST['id_paciente'];
 
-        $sql = $pdo->prepare("INSERT INTO comentarios (id_profissional, comentario, data_hora) VALUES (:id_profissional, :comentario, NOW())");
+        $sql = $pdo->prepare("INSERT INTO comentarios (id_profissional, comentario, id_paciente, data_hora) VALUES (:id_profissional, :id_paciente, :comentario, NOW())");
         $sql->bindValue(':id_profissional', $id_profissional);
         $sql->bindValue(':comentario', $comentario);
+        $sql->bindValue(':id_paciente', $id_paciente);
         var_dump($sql);
         $sql->execute();
 
