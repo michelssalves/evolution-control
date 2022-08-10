@@ -15,6 +15,8 @@ include 'assets/controllers/cadastrarComentario.php';
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/filtro1.js"></script>
+    <script src="assets/js/filtro2.js"></script>
     <title>Evolução</title>
 </head>
 <body>
@@ -50,7 +52,5 @@ include 'assets/controllers/cadastrarComentario.php';
         </div>
     </div>
 </div>
-<script src="assets/js/filtro1.js"></script>
-<script src="assets/js/filtro2.js"></script>
 </body>
 </html>

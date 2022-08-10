@@ -9,8 +9,8 @@ $(document).ready( function ()
 			language: 
 			{
 				"sEmptyTable": "Nenhum registro encontrado",
-				"sInfo": "Mostrando de _START_ at� _END_ de _TOTAL_ registros",
-				"sInfoEmpty": "Mostrando 0 at� 0 de 0 registros",
+				"sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+				"sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
 				"sInfoFiltered": "(Filtrados de _MAX_ registros)",
 				"sInfoPostFix": "",
 				"sInfoThousands": ".",
@@ -21,10 +21,10 @@ $(document).ready( function ()
 				"sSearch": "Pesquisar",
 				"oPaginate": 
 				{
-					"sNext": "Pr�ximo",
+					"sNext": "Próximo",
 					"sPrevious": "Anterior",
 					"sFirst": "Primeiro",
-					"sLast": "�ltimo"
+					"sLast": "Último"
 				},
 				"oAria":
 				{
