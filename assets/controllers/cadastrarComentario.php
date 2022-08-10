@@ -63,7 +63,7 @@ function listarCabecalho($id_paciente){
          foreach($lista as $row){
 
             $txtTable = $txtTable.'<tr>
-            <th rowspan="4"><center><img style="width:150px; height:150px" src="assets/img/pacientes/'.$row['id_paciente'].'.jpg" alt=""></th>
+            <th rowspan="8"><center><img style="width:150px; height:150px" src="assets/img/pacientes/'.$row['id_paciente'].'.jpg" alt=""></th>
             <th><center>PACIENTE</th>
             <th><center>TIPO</th>
             <th><center>IDADE</th>
