@@ -14,7 +14,6 @@ if($acao =='evoluir'){
         $sql->bindValue(':id_profissional', $id_profissional);
         $sql->bindValue(':comentario', $comentario);
         $sql->bindValue(':id_paciente', $id_paciente);
-        var_dump($sql);
         $sql->execute();
 
 }
