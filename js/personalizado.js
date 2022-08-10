@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
-    var calendar = new Calendar(calendarEl, {
+    var calendar = new FullCalendar.Calendar(calendarEl, {
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
         events: 'list_eventos.php',
         extraParams: function () {
             return {
-                cachebuster: new Date().valueOf()
+                cachebuster: new Date().valueOf(),
+                start: nowDate,
+                end: nowDate.clone().add(1, 'weeks')
             };
         },
         eventClick: function (info) {
