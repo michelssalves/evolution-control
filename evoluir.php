@@ -50,70 +50,7 @@ include 'assets/controllers/cadastrarComentario.php';
         </div>
     </div>
 </div>
+<script src="assets/js/filtro1.js"></script>
+<script src="assets/js/filtro2.js"></script>
 </body>
 </html>
-<script>
-$(document).ready( function () 
-	{
-		$('#example').dataTable( 
-		{ 
-			columnDefs: [{targets: -1,className: 'dt-body-right'}],
-			"pageLength": 25,
-			 "order": [[ 2, 'asc' ], [ 1, 'asc' ]],
-			 "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50,100,"All"] ],
-			language: 
-			{
-				"sEmptyTable": "Nenhum registro encontrado",
-				"sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-				"sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
-				"sInfoFiltered": "(Filtrados de _MAX_ registros)",
-				"sInfoPostFix": "",
-				"sInfoThousands": ".",
-				"sLengthMenu": "_MENU_ resultados por pagina",
-				"sLoadingRecords": "Carregando...",
-				"sProcessing": "Processando...",
-				"sZeroRecords": "Nenhum registro encontrado",
-				"sSearch": "Pesquisar",
-				"oPaginate": 
-				{
-					"sNext": "Próximo",
-					"sPrevious": "Anterior",
-					"sFirst": "Primeiro",
-					"sLast": "Último"
-				},
-				"oAria":
-				{
-					"sSortAscending": ": Ordenar colunas de forma ascendente",
-					"sSortDescending": ": Ordenar colunas de forma descendente"
-				},
-				"select": 
-				{
-					"rows": 
-					{
-						"_": "Selecionado %d linhas",
-						"0": "Nenhuma linha selecionada",
-						"1": "Selecionado 1 linha"
-					}
-				}
-			 }
-		});
-	} 
-);
-function PopupCenter(url, title, w, h) {  
-    // Fixes dual-screen position                         Most browsers      Firefox  
-    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;  
-    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;  
-              
-    width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;  
-    height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;  
-              
-    var left = ((width / 2) - (w / 2)) + dualScreenLeft;  
-    var top = ((height / 2) - (h / 2)) + dualScreenTop;  
-    var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);  
-  
-    // Puts focus on the newWindow  
-    if (window.focus) {  
-        newWindow.focus();  
-    }  
-}  
-</script>
