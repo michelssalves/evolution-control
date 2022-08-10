@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
         editable: true,
         eventLimit: true,
         validRange: {
-            start: moment().day(),         // data atual
-            end:  moment().add(15, 'days') // data atual + 14 (15 com a data atual)
+            start: moment().day(),         
+            end:  moment().add(15, 'days') 
          },
         events: 'list_eventos.php',
         
