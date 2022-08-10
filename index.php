@@ -156,10 +156,6 @@ include 'assets/controllers/config.php';
             document.getElementById('start'),
             {
                 mask:'00-00-0000 00:00'
-            },
-            document.getElementById('end'),
-            {
-                mask:'00-00-0000 00:00'
             }
         );
         </script>                                    
