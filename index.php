@@ -45,7 +45,7 @@ include 'assets/controllers/config.php';
                         <div class="visevent">
                             <dl class="row">
 
-                                <dt class="col-sm-3">id evento</dt>
+                                <dt hidden class="col-sm-3">id evento</dt>
                                 <dd hidden class="col-sm-9" id="id"></dd>
 
                                 <dt hidden class="col-sm-3">id paciente</dt>
