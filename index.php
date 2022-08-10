@@ -76,7 +76,7 @@ include 'assets/controllers/config.php';
                         </div>
                         <script>
                             function ipChange(elementoIp){
-                            let urlApi = 'https://alvesmichel.cf/evolution-control/evoluir.php?id=';
+                            let urlApi = 'evoluir.php?id_paciente';
                             let elementoForm = document.querySelector('#formAPI');
                             elementoForm.action = urlApi + elementoIp.value;
                             }
