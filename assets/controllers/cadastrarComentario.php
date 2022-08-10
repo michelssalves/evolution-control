@@ -33,7 +33,7 @@ function listar($id_paciente){
        
          foreach($lista as $row){
             $txtTable = $txtTable.'<tr>
-            <td><img src="assets/img/'.$row['id_profissional'].'.jpg" style="width:50px; height:50px"></td>
+            <td><img src="assets/img/profissionais/'.$row['id_profissional'].'.jpg" style="width:50px; height:50px"></td>
             <td><center> '.$row['funcao'].'</td>
             <td><center> '.$row['comentario'].' </td>
             <tr>';
@@ -57,7 +57,7 @@ function listarCabecalho($id_paciente){
          foreach($lista as $row){
 
             $txtTable = $txtTable.'<tr>
-            <th rowspan="2"><center><img style="width:150px; height:150px" src="assets/img/'.$row['id_paciente'].'.jpg" alt=""></th>
+            <th rowspan="2"><center><img style="width:150px; height:150px" src="assets/img/pacientes/'.$row['id_paciente'].'.jpg" alt=""></th>
             <th><center>PACIENTE</th>
             </tr>
             <th><center>'.$row['nome_paciente'].'</th>';
