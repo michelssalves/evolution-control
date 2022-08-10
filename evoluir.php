@@ -34,7 +34,7 @@ include 'assets/controllers/cadastrarComentario.php';
                         <button name="acao" value="evoluir" class="btn btn-success">Enviar</button>
                         <a href="index.php" class="btn btn-info">Voltar</a>
                     </form>
-                    <table class="table table-striped table-bordered table-hoverable">
+                    <table id="example" class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
                             <th style="width:50px;">-</th>
                             <th><center>Área</th>
@@ -51,3 +51,5 @@ include 'assets/controllers/cadastrarComentario.php';
 </div>
 </body>
 </html>
+<script src="assets/js/filtroTabela1.js"></script>
+<script src="assets/js/filtroTabela2.js"></script>
