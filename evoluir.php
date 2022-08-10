@@ -22,9 +22,7 @@ include 'assets/controllers/cadastrarComentario.php';
                 <div class="container-xxl">
                     <div class="container">
                     <table class="table table-striped table-bordered table-hoverable">
-                    <thead class="thead-dark">
                             <?= listarCabecalho($id_paciente) ?>
-                    </thead>
                     </table>
                     <form action="" method="POST">
                         <input hidden type="text" name="id_paciente" value="<?=$id_paciente?>">
@@ -49,6 +47,6 @@ include 'assets/controllers/cadastrarComentario.php';
             </div>
         </div>
     </div>
-    </div>
+</div>
 </body>
 </html>
