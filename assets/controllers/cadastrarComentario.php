@@ -42,7 +42,7 @@ function listar($id_paciente){
             <td><img src="assets/img/profissionais/'.$row['id_profissional'].'.jpg" style="width:50px; height:50px"></td>
             <td><center> '.$row['funcao'].'</td>
             <td><center> '.$row['comentario'].' </td>
-            <tr>';
+            </tr>';
             
         }
     }
@@ -71,6 +71,7 @@ function listarCabecalho($id_paciente){
             <th><center>'.$row['nome_paciente'].'</th>
             <th><center>Espectro Altista</th>
             <th><center>5</th>
+            
             ';
         }
     }

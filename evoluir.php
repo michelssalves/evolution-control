@@ -39,9 +39,11 @@ include 'assets/controllers/cadastrarComentario.php';
                     </form>
                     <table id="example" class="table table-striped table-bordered table-hoverable">  
                         <thead class="thead-dark">
-                            <th style="width:50px;">#</th>
-                            <th><center>Área</th>
-                            <th><center>Evolução</th>
+                            <tr>
+                                <th style="width:50px;">#</th>
+                                <th><center>Área</th>
+                                <th><center>Evolução</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <?= listar($id_paciente) ?>
