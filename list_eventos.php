@@ -20,7 +20,6 @@ while($row = $sql->fetch(PDO::FETCH_ASSOC)){
     $nome_profissional = $row['nome_profissional'];
     $id_profissional = $row['id_profissional'];
 
-    
     $eventos[] = [
         'id' => $id, 
         'nome_paciente' => $nome_paciente, 
