@@ -68,14 +68,14 @@ include 'assets/controllers/config.php';
 
                             </dl>
                             <div class="row">
-                            <div class="col-sm">
+                            <div class="col">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             </div>
-                            <div class="col-sm">
+                            <div class="col">
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             </div>
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
-                            <div class="col-sm">
+                            <div class="col">
                             <button type="submit" class="btn btn-success">Evoluir</button>
                             </div>
                             </div>    
