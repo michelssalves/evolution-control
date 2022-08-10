@@ -69,7 +69,7 @@ include 'assets/controllers/config.php';
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            <form id="formAPI" method="get" action="">
+                            <form id="formAPI" method="get" action="evoluir.php?id_paciente">
                             <input type="text" name="id_pac" id="id_paciente" onchange="ipChange(this)">
                             <button type="submit" class="btn btn-success">Evoluir</button>
                             </form>
