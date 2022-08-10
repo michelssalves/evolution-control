@@ -71,7 +71,7 @@ include 'assets/controllers/config.php';
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
                             <input hidden type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
-                            <button type="submit" class="btn btn-success">Evoluir</button>
+                            <a href="" class="btn btn-success">Evoluir</a>
                             </form>
                         </div>
                         <script>
