@@ -26,6 +26,7 @@ include 'assets/controllers/cadastrarComentario.php';
                     </thead>
                     </table>
                     <form action="" method="POST">
+                        <input hidden type="text" name="id_paciente" value="<?=$id_paciente?>">
                         <input hidden type="text" name="id_profissional" value="1">
                         <div class="span9">
                             <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
