@@ -45,8 +45,8 @@ include 'assets/controllers/config.php';
                         <div class="visevent">
                             <dl class="row">
 
-                                <dt  class="col-sm-3">id evento</dt>
-                                <dd  class="col-sm-9" id="id"></dd>
+                                <dt hidden class="col-sm-3">id evento</dt>
+                                <dd hidden class="col-sm-9" id="id"></dd>
 
                                 <dt hidden class="col-sm-3">id paciente</dt>
                                 <dd hidden class="col-sm-9" id="id_paciente"></dd>
@@ -70,7 +70,7 @@ include 'assets/controllers/config.php';
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
-                            <input type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
+                            <input hidden type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
                             <button type="submit" class="btn btn-success">Evoluir</button>
                             </form>
                         </div>
