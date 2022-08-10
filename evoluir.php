@@ -1,6 +1,6 @@
 <?php
 session_start();
-$id_paciente = $_REQUEST['id_pac'];
+$id_paciente = $_REQUEST['id_paciente'];
 include 'assets/controllers/cadastrarComentario.php';
 
 ?>
