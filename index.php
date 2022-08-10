@@ -44,11 +44,12 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
+                                <form action="" method="POST">
                                 <dt  class="col-sm-3">id evento</dt>
                                 <dd  class="col-sm-9" id="id"></dd>
 
                                 <dt hidden class="col-sm-3">id paciente</dt>
-                                <dd hidden class="col-sm-9" id="id_paciente"></dd>
+                                <dd name="id_paciente" hidden class="col-sm-9" id="id_paciente"></dd>
 
                                 <dt hidden class="col-sm-3">id profssional </dt>
                                 <dd hidden class="col-sm-9" id="id_profissional"></dd>
@@ -68,7 +69,10 @@ include 'assets/controllers/config.php';
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            <a target="_blank" href="evoluir.php?id=<?=$id_paciente?>" id="apagar_evento" class="btn btn-success">Evoluir</a>
+                            
+
+                            <a target="_blank" href="evoluir.php" id="apagar_evento" class="btn btn-success">Evoluir</a>
+                            </form>
                         </div>
                         <div class="formedit">
                             <span id="msg-edit"></span>
