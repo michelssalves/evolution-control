@@ -2,14 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        validRange: function(nowDate) {
-    return {
-      start: nowDate,
-      end: nowDate.clone().add(1, 'months')
-    };
-},
-
+    
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
