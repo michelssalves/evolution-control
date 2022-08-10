@@ -44,7 +44,6 @@ include 'assets/controllers/config.php';
                     <div class="modal-body">
                         <div class="visevent">
                             <dl class="row">
-                                <form action="" method="POST">
                                 <dt  class="col-sm-3">id evento</dt>
                                 <dd  class="col-sm-9" id="id"></dd>
 
@@ -69,8 +68,7 @@ include 'assets/controllers/config.php';
                             </dl>
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
-                            
-
+                            <form  method="POST">
                             <a target="_blank" href="evoluir.php" id="apagar_evento" class="btn btn-success">Evoluir</a>
                             </form>
                         </div>
