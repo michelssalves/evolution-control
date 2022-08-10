@@ -19,7 +19,7 @@ if($acao =='evoluir'){
 
 function listar($id_paciente){
 
-    $id_paciente = $_REQUEST['id_paciente'];
+   // $id_paciente = $_REQUEST['id_paciente'];
 
     include 'config.php';
 
