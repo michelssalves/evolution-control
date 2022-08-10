@@ -149,16 +149,7 @@ include 'assets/controllers/config.php';
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="https://unpkg.com/imask"></script>
-        <script>
-        IMask(
-            document.getElementById('start'),
-            {
-                mask:'00-00-0000 00:00'
-            }
-        );
-        </script>                                    
+        </div>                                    
         <!-- MODAL PARA CADASTRAR AGENDA-->
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
