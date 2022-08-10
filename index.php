@@ -128,13 +128,13 @@ include 'assets/controllers/config.php';
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Início do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="datetime-local" name="start" class="form-control" id="start">
+                                        <input type="text" name="start" class="form-control" id="start">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Final do evento</label>
                                     <div class="col-sm-10">
-                                        <input type="datetime-local" name="end" class="form-control" id="end">
+                                        <input type="text" name="end" class="form-control" id="end">
                                     </div>
                                 </div>
 
@@ -150,7 +150,19 @@ include 'assets/controllers/config.php';
                 </div>
             </div>
         </div>
-
+        <script src="https://unpkg.com/imask"></script>
+        <script>
+        IMask(
+            document.getElementById('start'),
+            {
+                mask:'00-00-0000 00:00'
+            },
+            document.getElementById('end'),
+            {
+                mask:'00-00-0000 00:00'
+            }
+        );
+        </script>                                    
         <!-- MODAL PARA CADASTRAR AGENDA-->
         <div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
