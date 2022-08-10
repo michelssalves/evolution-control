@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
+        firstDay: moment().day(),
         weekends: false,
         editable: true,
         eventLimit: true,
