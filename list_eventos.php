@@ -1,5 +1,6 @@
 <?php
 include 'assets/controllers/config.php';
+include 'assets/controllers/functions.php';
 
 $sql = $pdo->prepare("SELECT * FROM agenda AS a 
 JOIN pacientes AS pac ON a.id_paciente = pac.id_paciente 
@@ -12,8 +13,8 @@ while($row = $sql->fetch(PDO::FETCH_ASSOC)){
     $id = $row['id'];
     $title = $row['title'];
     $color = $row['color'];
-    $start = $row['start'];
-    $end = $row['end'];
+    $start = dmaHLocal($row['start']);
+    $end = dmaHLocal($row['end']);
     $nome_paciente = $row['nome_paciente'];
     $id_paciente = $row['id_paciente'];
     $nome_profissional = $row['nome_profissional'];
