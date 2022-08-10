@@ -68,11 +68,13 @@ include 'assets/controllers/config.php';
 
                             </dl>
                             <div class="row">
+                            <div class="col-sm">
                             <button class="btn btn-warning btn-canc-vis">Editar</button>
                             <a href="" id="apagar_evento" class="btn btn-danger">Apagar</a>
                             <form id="formAPI" method="get" action="evoluir.php?id_paciente">
                             <button type="submit" class="btn btn-success">Evoluir</button>
-                            </div>
+                            </div>    
+                        </div>
                             <input hidden type="text" name="id_paciente" id="id_pac" onchange="ipChange(this)">
                             </form>
                         </div>
