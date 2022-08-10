@@ -49,7 +49,7 @@ include 'assets/controllers/config.php';
                                 <dd  class="col-sm-9" id="id"></dd>
 
                                 <dt hidden class="col-sm-3">id paciente</dt>
-                                <dd hidden class="col-sm-9" id="id_paciente"></dd>
+                                <dd hidden class="col-sm-9" id="id_pac"></dd>
 
                                 <dt hidden class="col-sm-3">id profssional </dt>
                                 <dd hidden class="col-sm-9" id="id_profissional"></dd>
