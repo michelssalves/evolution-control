@@ -36,8 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         selectable: true,
         select: function (info) {
             //alert('Início do evento: ' + info.start.toLocaleString());
-            $('#cadastrar #start').val(info.start.toLocaleString());
-            $('#cadastrar #end').val(info.end.toLocaleString());
+            $('#cadastrar #start').val(info.start);
+            //$('#cadastrar #end').val(info.end.toLocaleString());
+            $('#cadastrar #end').val(info.end);
             $('#cadastrar').modal('show');
         }
     });
