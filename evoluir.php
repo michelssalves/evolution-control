@@ -32,6 +32,7 @@ include 'assets/controllers/cadastrarComentario.php';
                             <textarea required name="comentario" id="" cols="40" rows="4"></textarea>
                         </div>
                         <button name="acao" value="evoluir">Enviar</button>
+                        <a href="index.php" class="btn btn-info">Voltar</a>
                     </form>
                     <table class="table table-striped table-bordered table-hoverable">
                         <thead class="thead-dark">
