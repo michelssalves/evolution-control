@@ -8,7 +8,9 @@ include 'assets/controllers/config.php';
         <script src='assets/js/block.js'></script>
         <meta charset='utf-8' />
         <link href='css/core/main.min.css' rel='stylesheet' />
-        <link href='css/daygrid/main.min.css' rel='stylesheet' />
+        <link href='css/daygrid/main.min.css' rel='stylesheet'/>
+        <link href='css/list/main.min.css' rel='stylesheet'/>
+        <link href='css/timegrid/main.min.css' rel='stylesheet'/>
         <script src='js/core/main.min.js'></script>
         <script src='js/interaction/main.min.js'></script>
         <script src='js/daygrid/main.min.js'></script>
