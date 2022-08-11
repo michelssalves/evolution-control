@@ -8,14 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
           },
-        locale: 'pt-br',
-        plugins: ['interaction', 'dayGrid'],
-        weekends: false,
-        editable: true,
-        eventLimit: true,
-        navLinks: true,
-        nowIndicator: true,
-        weekNumberCalculation: 'ISO',
+          height: 'auto',
+          navLinks: true, // can click day/week names to navigate views
+          editable: true,
+          selectable: true,
+          selectMirror: true,
+          nowIndicator: true,
         events: 'list_eventos.php',
     
 
