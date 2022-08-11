@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
         editable: true,
         eventLimit: true,
         navLinks: true,
+        nowIndicator: true,
+
+        weekNumbers: true,
+        weekNumberCalculation: 'ISO',
         
 
         events: 'list_eventos.php',
