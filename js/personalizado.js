@@ -11,23 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
         weekends: false,
         editable: true,
         eventLimit: true,
-        /*
+        
         validRange: function(nowDate) {
         return {
             start: nowDate,         
-            end: nowDate.clone().add(1, 'month') 
-         };
-        },*/
-        headerToolbar: {
-            center: 'dayGridMonth,timeGridFourDay' // buttons for switching between views
-          },
-          views: {
-            timeGridFourDay: {
-              type: 'timeGrid',
-              duration: { days: 4 },
-              buttonText: '4 day'
-            }
-          },
+            end: nowDate.clone().add(1, 'day') 
+         }
+        },
+
         events: 'list_eventos.php',
         
         extraParams: function () {
