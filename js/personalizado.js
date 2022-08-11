@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         eventLimit: true,
         navLinks: true,
         nowIndicator: true,
-
-        weekNumbers: true,
         weekNumberCalculation: 'ISO',
         
 
