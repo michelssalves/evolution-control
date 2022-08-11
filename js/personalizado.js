@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //defaultView: 'timeGridWeek',
         ///eventLimit:true,
         //editable: true,
+        weekends: false,
         plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
         header: {
           left: 'prev,next today',
