@@ -12,6 +12,7 @@ include 'assets/controllers/config.php';
         <script src='js/core/main.min.js'></script>
         <script src='js/interaction/main.min.js'></script>
         <script src='js/daygrid/main.min.js'></script>
+        <script src='js/daygrid/main.js'></script>
         <script src='js/core/locales/pt-br.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
