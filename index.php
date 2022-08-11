@@ -11,7 +11,7 @@ include 'assets/controllers/config.php';
         <link href='css/daygrid/main.min.css' rel='stylesheet' />
         <script src='js/core/main.min.js'></script>
         <script src='js/interaction/main.min.js'></script>
-        <script src='js/daygrid/main.min.js'></script>
+        
         <script src='js/daygrid/main.js'></script>
         <script src='js/core/locales/pt-br.js'></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
