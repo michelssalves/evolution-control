@@ -3,10 +3,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         locale:'pt-br',
-        plugins:['interaction', 'dayGrid'],
-        defaultView: 'timeGridWeek',
-        eventLimit:true,
-        editable: true,   
+       // plugins:['interaction', 'dayGrid'],
+        //defaultView: 'timeGridWeek',
+        ///eventLimit:true,
+        //editable: true,
+        plugins: [ 'dayGrid', 'timeGrid', 'list', 'interaction' ],
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        },
+        //defaultDate: '2019-04-12',
+        navLinks: true,   
         events: 'list_eventos.php',
         eventClick: function (info) {
             $("#apagar_evento").attr("href", "proc_apagar_evento.php?id=" + info.event.id);
