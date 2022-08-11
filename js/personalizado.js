@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         validRange: function(nowDate) {
         return {
             start: nowDate,         
-            end: nowDate.clone().add(15, 'days') 
+            end: nowDate.clone().add(1, 'month') 
          };
         },
         events: 'list_eventos.php',
