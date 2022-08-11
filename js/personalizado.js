@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendar = new FullCalendar.Calendar(calendarEl, {
         locale:'pt-br',
         plugins:['interaction', 'dayGrid'],
-        initialView: 'timeGridWeek',
+        defaultView: 'timeGridWeek',
         eventLimit:true,
         editable: true,   
         events: 'list_eventos.php',
