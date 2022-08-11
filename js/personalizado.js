@@ -16,22 +16,14 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
-        
         weekends: false,
         editable: true,
         eventLimit: true,
         navLinks: true,
         nowIndicator: true,
         weekNumberCalculation: 'ISO',
-        
-
         events: 'list_eventos.php',
-        
-        extraParams: function () {
-           return {
-               cachebuster: new Date().valueOf(),
-            };
-        },
+    
 
   
         eventClick: function (info) {
