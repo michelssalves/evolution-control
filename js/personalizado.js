@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         weekends: false,
         editable: true,
         eventLimit: true,
-        validRange: {
-            start: moment().day(),         
-            end:  moment().add(15, 'days') 
-         },
+        validRange: function(nowDate) {
+        return {
+            start: nowDate,         
+            end: nowDate.clone().add(15, 'days') 
+         };
+        },
         events: 'list_eventos.php',
         
         extraParams: function () {
