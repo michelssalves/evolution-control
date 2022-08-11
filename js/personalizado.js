@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         weekends: false,
         editable: true,
         eventLimit: true,
-        validRange: function(nowDate) {
-        return {
-            start: nowDate,         
-            end: nowDate.clone().add(1, 'month') 
-         };
-        },
         events: 'list_eventos.php',
         
         extraParams: function () {
