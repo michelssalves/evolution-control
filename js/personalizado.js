@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        defaultView: 'dayGridWeek',
+        defaultView: 'timeGridWeek',
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         weekends: false,
