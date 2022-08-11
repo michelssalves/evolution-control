@@ -2,18 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGrid',
-        visibleRange: function(currentDate) {
-          // Generate a new date for manipulating in the next step
-          var startDate = new Date(currentDate.valueOf());
-          var endDate = new Date(currentDate.valueOf());
-      
-          // Adjust the start & end dates, respectively
-          startDate.setDate(startDate.getDate() - 1); // One day in the past
-          endDate.setDate(endDate.getDate() + 2); // Two days into the future
-      
-          return { start: startDate, end: endDate };
-        },
+        plugins: [ 'dayGrid' ],
+        defaultView: 'dayGridMonth',
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         weekends: false,
