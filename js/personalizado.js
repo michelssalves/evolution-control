@@ -5,12 +5,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         
         locale: 'pt-br',
-        plugins: ['interaction', 'dayGridPlugin'],
+        plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
         initialView: 'dayGridWeek',
         weekends: false,
         editable: true,
         eventLimit: true,
+        /*
+        validRange: function(nowDate) {
+        return {
+            start: nowDate,         
+            end: nowDate.clone().add(1, 'month') 
+         };
+        },*/
+        headerToolbar: {
+            center: 'dayGridMonth,timeGridFourDay' // buttons for switching between views
+          },
+          views: {
+            timeGridFourDay: {
+              type: 'timeGrid',
+              duration: { days: 4 },
+              buttonText: '4 day'
+            }
+          },
         events: 'list_eventos.php',
         
         extraParams: function () {
