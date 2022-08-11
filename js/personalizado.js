@@ -7,17 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
-        initialView: 'dayGridWeek',
+        initialView: 'dayGrid',
         weekends: false,
         editable: true,
         eventLimit: true,
         
-        validRange: function(nowDate) {
-        return {
-            start: nowDate,         
-            end: nowDate.clone().add(1, 'day') 
-         }
-        },
+
 
         events: 'list_eventos.php',
         
