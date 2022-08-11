@@ -5,14 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         
         locale: 'pt-br',
-        plugins: ['interaction', 'dayGrid '],
+        plugins: ['interaction', 'dayGrid'],
         //defaultDate: '2019-04-12',
-        initialView: 'dayGrid ',
+        initialView: 'dayGridWeek',
         weekends: false,
         editable: true,
         eventLimit: true,
-        
-
 
         events: 'list_eventos.php',
         
