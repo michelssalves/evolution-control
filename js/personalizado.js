@@ -5,16 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
         headerToolbar: {
             center: 'dayGridMonth,timeGridFourDay'
           },
-          views: {
-            timeGridFourDay: {
-              type: 'timeGrid',
-              duration: { days: 4 },
-              buttonText: '4 day'
-            }
+          initialView: 'timeGrid',
+          visibleRange: {
+            start: '2022-08-08',
+            end: '2022-08-16'
           },
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
-        initialView: 'timeline',
+        
         weekends: false,
         editable: true,
         eventLimit: true,
