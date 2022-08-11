@@ -9,6 +9,8 @@ session_start();
         <link href='css/daygrid/main.min.css' rel='stylesheet' />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/personalizado.css">
+        <link href='fullcalendar/main.css' rel='stylesheet' />
+        <script src='fullcalendar/main.js'></script>
 
         <script src='js/core/main.min.js'></script>
         <script src='js/interaction/main.min.js'></script>
