@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         weekends: false,
         editable: true,
         eventLimit: true,
+        navLinks: true,
         
 
         events: 'list_eventos.php',
