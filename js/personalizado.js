@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         
         locale: 'pt-br',
-        plugins: ['interaction', 'dayGrid'],
+        plugins: ['interaction', 'dayGridPlugin '],
         //defaultDate: '2019-04-12',
-        initialView: 'dayGrid',
+        initialView: 'dayGridPlugin ',
         weekends: false,
         editable: true,
         eventLimit: true,
