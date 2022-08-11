@@ -3,11 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+            center: 'dayGridMonth,timeGridFourDay'
           },
-        
+          views: {
+            timeGridFourDay: {
+              type: 'timeGrid',
+              duration: { days: 4 },
+              buttonText: '4 day'
+            }
+          },
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
         initialView: 'dayGridWeek',
