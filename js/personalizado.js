@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         locale: 'pt-br',
         plugins: ['interaction', 'dayGrid'],
-        initialView: 'timeGridWeek',
+        initialView: 'dayGridWeek',
         weekends: false,
         editable: true,
         eventLimit: true,
