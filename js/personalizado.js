@@ -5,26 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         
         locale: 'pt-br',
-        /*plugins: ['interaction', 'dayGrid'],
-        //defaultDate: '2019-04-12',
+        plugins: ['interaction', 'dayGrid'],
         initialView: 'dayGridWeek',
         weekends: false,
         editable: true,
         eventLimit: true,
-        */
-        initialDate: '2020-09-12',
-        initialView: 'timeGridWeek',
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-        },
-        height: 'auto',
-        navLinks: true, // can click day/week names to navigate views
-        editable: true,
-        selectable: true,
-        selectMirror: true,
-        nowIndicator: true,
+        
 
         events: 'list_eventos.php',
         
