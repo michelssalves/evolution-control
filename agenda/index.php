@@ -1,6 +1,11 @@
 <?php 
 include './assets/controllers/config';
 include './assets/controllers/agenda';
+$hi = $hi->format('08:00');
+$inc = $inc->format('01:00');
+
+echo $n = $hi + $inc;
+echo 'amor';
 ?>
 <!DOCTYPE html>
 <html lang="en">

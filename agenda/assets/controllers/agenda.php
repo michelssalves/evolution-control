@@ -1,10 +1,6 @@
 <?php 
 
-$hi = $hi->format('08:00');
-$inc = $inc->format('01:00');
 
-echo $n = $hi + $inc;
-echo 'amor';
 
 function listar(){
 
