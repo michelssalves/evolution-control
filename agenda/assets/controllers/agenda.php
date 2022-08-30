@@ -4,7 +4,7 @@ function listar(){
 
     include './config.php';
 
-    $sql = $pdo->prepare("SELECT * FROM agenda2 WHERE data_agendamento = '2022-08-30'");
+    $sql = $pdo->prepare("SELECT * FROM agenda2 ");
     $sql->execute();
     $hora = '07:15';
     while($row = $sql->fetch(PDO::FETCH_ASSOC)){
