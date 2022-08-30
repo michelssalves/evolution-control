@@ -14,9 +14,9 @@
         if($hora != '12:30'){    
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            <td>'.$row['f1'] = true ? $row['f1'] : '' .'</td>
-            <td>'.$row['f2'] = true ? $row['f2'] : ''.'</td>
-            <td>'.$row['f3'] = true ? $row['f3'] : ''.'</td>
+            <td>'.$row[$x] = true ? $row['f1'] : '' .'</td>
+            <td>'.$row[$x] = true ? $row['f2'] : ''.'</td>
+            <td>'.$row[$x] = true ? $row['f3'] : ''.'</td>
             <td>'.$func04.'</td>
             <td>'.$func05.'</td>
             <td>'.$func06.'</td>
