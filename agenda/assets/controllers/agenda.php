@@ -1,6 +1,6 @@
 <?php 
 
-function listar(){
+
 
     include './config.php';
 
@@ -39,8 +39,8 @@ function listar(){
     } 
 }
       
-    return $txtTable;
-}
+
+
 
 
 
