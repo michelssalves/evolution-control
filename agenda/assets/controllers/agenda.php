@@ -24,14 +24,14 @@ function listar(){
         </tr>';
         }else{
             $txtTable = $txtTable.'<tr>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>
-            <td>||</td>        
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>        
         </tr>'; 
         $hora = '12:45';
         }
