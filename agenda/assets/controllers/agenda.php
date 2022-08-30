@@ -5,18 +5,17 @@
     var_dump($sql);
     $sql->execute();
     $hora = '07:15';
-  
+    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         
         for($x=0; $x<=13; $x++){
-            while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
           
         if($hora != '12:30'){    
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            <td>'.$row['f1'] = true ? '2': $row['f1'].'</td>
-            <td>'.$row['f2'] = true ? '2': $row['f2'].'</td>
-            <td>'.$row['f3'] = true ? '2': $row['f3'].'</td>
+            <td>'.$row['f1'] = true ? $row['f1'] : '' .'</td>
+            <td>'.$row['f2'] = true ? $row['f2'] : ''.'</td>
+            <td>'.$row['f3'] = true ? $row['f3'] : ''.'</td>
             <td>'.$func04.'</td>
             <td>'.$func05.'</td>
             <td>'.$func06.'</td>
