@@ -2,12 +2,12 @@
     include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM agenda2");
-    var_dump($sql);
+    
     $sql->execute();
     $hora = '07:15';
-    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
-        
-       // for($x=0; $x<=13; $x++){
+    $row = $sql->fetch(PDO::FETCH_ASSOC);
+    var_dump($row);
+        for($x=0; $x<=13; $x++){
 
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
           
@@ -34,7 +34,7 @@
             <td>-</td>        
         </tr>'; 
         $hora = '12:45';
-        //}
+     
 
     }
 } 
