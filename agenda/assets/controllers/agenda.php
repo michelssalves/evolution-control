@@ -4,19 +4,19 @@ function listar(){
 
     include './config.php';
 
-    //$sql = $pdo->prepare("SELECT * FROM agenda WHERE data_agendamento = $data_agendamento");
-    //$sql->execute();
+    $sql = $pdo->prepare("SELECT * FROM agenda WHERE data_agendamento = '2022-08-30'");
+    $sql->execute();
     $hora = '07:15';
-    //while($row = $sql->fetch(PDO::FETCH_ASSOC)){
+    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         for($x=0; $x<=13; $x++){
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
           
         if($hora != '12:30'){    
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            <td>'.$func01 = true ? '2': '0'.'</td>
-            <td>'.$func02.'</td>
-            <td>'.$func03.'</td>
+            <td>'.$row['f1'] = true ? '2': $row['f1'].'</td>
+            <td>'.$row['f2'] = true ? '2': $row['f2'].'</td>
+            <td>'.$row['f3'] = true ? '2': $row['f3'].'</td>
             <td>'.$func04.'</td>
             <td>'.$func05.'</td>
             <td>'.$func06.'</td>
@@ -36,7 +36,7 @@ function listar(){
         $hora = '12:45';
         }
     } 
-    //}
+}
       
     return $txtTable;
 }
