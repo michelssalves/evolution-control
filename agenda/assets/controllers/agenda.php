@@ -14,13 +14,13 @@ function listar(){
 
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>
-            <td>'.$hora.'</td>        
+            <td>'.$func01.'</td>
+            <td>'.$func02.'</td>
+            <td>'.$func03.'</td>
+            <td>'.$func04.'</td>
+            <td>'.$func05.'</td>
+            <td>'.$func06.'</td>
+            <td>'.$func07.'</td>        
         </tr>';
     } 
     //}
