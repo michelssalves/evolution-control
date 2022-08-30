@@ -1,5 +1,11 @@
 <?php 
 
+$hi = $hi->format('08:00');
+$inc = $inc->format('01:00');
+
+echo $n = $hi + $inc;
+echo 'amor';
+
 function listar(){
 
     include './config.php';
@@ -7,11 +13,7 @@ function listar(){
     $sql =$pdo->prepare("SELECT * FROM agenda");
     $sql->execute();
     
-    $hi = $hi->format('08:00');
-    $inc = $inc->format('01:00');
 
-    echo $n = $hi + $inc;
-    echo 'amor';
     while($row = $sql->fetch(PDO::FETCH_ASSOC)){
 
         $hia = $hi+$inc;
