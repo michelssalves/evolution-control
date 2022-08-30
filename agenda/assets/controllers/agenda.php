@@ -6,8 +6,9 @@ function listar(){
 
     $sql =$pdo->prepare("SELECT * FROM agenda");
     $sql->execute();
-    $hi = '08:00';
-    $inc = '00:00';
+    $hi = strtotime('h:i', '08:00');
+    $inc = strtotime('h:i', '01:00');
+    echo $n = $hi + $inc;
 
     while($row = $sql->fetch(PDO::FETCH_ASSOC)){
 
