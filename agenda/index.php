@@ -1,11 +1,11 @@
 <?php 
 include './assets/controllers/config';
-include './assets/controllers/agenda';
-echo $hi = $hi->format('08:00');
-echo $inc = $inc->format('01:00');
 
-//echo $n = $hi + $inc;
-echo 'amor';
+
+$hora = '10:00:00';
+
+echo date('H:i:s', strtotime('+30 minute', strtotime($hora)));
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
