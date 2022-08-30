@@ -4,7 +4,6 @@
     $sql = $pdo->prepare("SELECT * FROM agenda2");
     var_dump($sql);
     $sql->execute();
-    /*
     $hora = '07:15';
     while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         
