@@ -13,7 +13,7 @@ function listar(){
         if($hora != '12:30'){    
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            <td>'.$func01 = true ? '2': '0'.'</td>
+            
             <td>'.$func02.'</td>
             <td>'.$func03.'</td>
             <td>'.$func04.'</td>
