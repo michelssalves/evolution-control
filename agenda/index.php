@@ -27,7 +27,7 @@ include './assets/controllers/agenda.php';
     </tr>
   </thead>
   <tbody>
-        <?php listar() ?>
+        <?= listar() ?>
   </tbody>
 </table>
 </body>

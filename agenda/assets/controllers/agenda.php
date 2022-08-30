@@ -14,7 +14,13 @@ function listar(){
 
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-        
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>
+            <td>'.$hora.'</td>        
         </tr>';
     } 
     //}
