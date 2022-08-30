@@ -7,7 +7,8 @@
     $hora = '07:15';
     while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         
-        for($x=0; $x<=13; $x++){
+       // for($x=0; $x<=13; $x++){
+
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
           
         if($hora != '12:30'){    
@@ -33,9 +34,11 @@
             <td>-</td>        
         </tr>'; 
         $hora = '12:45';
-        }
-    } 
-}
+        //}
+
+    }
+} 
+
       
 
 
