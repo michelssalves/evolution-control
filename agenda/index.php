@@ -1,3 +1,7 @@
+<?php 
+include './assets/controllers/config';
+include './assets/controllers/agenda';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,7 @@
     </tr>
   </thead>
   <tbody>
-    
+        <?php listar() ?>
   </tbody>
 </table>
 </body>
