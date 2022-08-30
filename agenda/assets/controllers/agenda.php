@@ -10,10 +10,11 @@ function listar(){
     //while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         for($x=0; $x<=13; $x++){
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
+          /* <td>'.$func01 = true ? '2': '0'.'</td> */
         if($hora != '12:30'){    
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            
+            <td>'.$func02.'</td>
             <td>'.$func02.'</td>
             <td>'.$func03.'</td>
             <td>'.$func04.'</td>
