@@ -5,9 +5,10 @@
     var_dump($sql);
     $sql->execute();
     $hora = '07:15';
-    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
+  
         
         for($x=0; $x<=13; $x++){
+            while($row = $sql->fetch(PDO::FETCH_ASSOC)){
         $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
           
         if($hora != '12:30'){    
