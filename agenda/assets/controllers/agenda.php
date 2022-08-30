@@ -14,10 +14,10 @@ function listar(){
 
         $txtTable = $txtTable.'<tr>
             <td>'.$hora.'</td>
-            </tr>';
+           ';
         } 
-        
-        $txtTable = $txtTable.'<tr>    
+
+        $txtTable = $txtTable.'    
             <td>'.$func01.'</td>
             <td>'.$func02.'</td>
             <td>'.$func03.'</td>
