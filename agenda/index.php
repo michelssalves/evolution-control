@@ -2,9 +2,9 @@
 include './assets/controllers/config';
 
 
-$hora = '10:00:00';
+$hora = '08:00:00';
 
-echo date('H:i:s', strtotime('+30 minute', strtotime($hora)));
+echo date('H:i:s', strtotime('+45 minute', strtotime($hora)));
 
 ?>
 <!DOCTYPE html>
