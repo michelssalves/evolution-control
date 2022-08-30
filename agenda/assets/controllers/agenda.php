@@ -4,22 +4,20 @@ function listar(){
 
     include './config.php';
 
-    $sql =$pdo->prepare("SELECT * FROM agenda");
-    $sql->execute();
-    
+    //$sql =$pdo->prepare("SELECT * FROM agenda");
+   // $sql->execute();
+    $hora = '07:15';
 
-    while($row = $sql->fetch(PDO::FETCH_ASSOC)){
-
-        $hia = $hi+$inc;
+    //while($row = $sql->fetch(PDO::FETCH_ASSOC)){
+        for($x=0; $x<5; $x++){
+        $hora =  date('H:i', strtotime('+45 minute', strtotime($hora)));
 
         $txtTable = $txtTable.'<tr>
-            <td>'.$hia.'</td>
+            <td>'.$hora.'</td>
         
         </tr>';
-        
-        $inc = '00:45';
-        $hi = $hia;
-    }
+    } 
+    //}
 
     return $txtTable;
 }

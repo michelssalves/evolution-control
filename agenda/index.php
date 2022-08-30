@@ -1,11 +1,6 @@
 <?php 
 include './assets/controllers/config';
-
-
-$hora = '08:00:00';
-
-echo date('H:i:s', strtotime('+45 minute', strtotime($hora)));
-
+include './assets/controllers/agenda.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
