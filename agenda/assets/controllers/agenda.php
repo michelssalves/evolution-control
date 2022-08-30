@@ -1,5 +1,5 @@
 <?php 
-    include './config.php';
+    include 'config.php';
 
     $sql = $pdo->prepare("SELECT * FROM agenda2");
     var_dump($sql);
